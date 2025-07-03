@@ -1,0 +1,151 @@
+/* Responsive Design */
+@media (max-width: 1199.98px) {
+    .nav-items {
+        gap: 15px;
+    }
+
+    .search-container {
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo-section {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+    .search-section {
+        justify-content: center;
+    }
+
+    .search-container {
+        min-width: 250px;
+    }
+    
+    .res-show{
+        width: 100%;
+        justify-content: space-between !important;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .floating-card {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .top-bar {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    /* .top-bar-left .email-info span {
+        display: none;
+    } */
+
+    .logo-section {
+        /* flex-direction: column; */
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .search-container {
+        min-width: 200px;
+    }
+
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .category-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .top-bar-right {
+        gap: 8px;
+    }
+
+    .social-login span {
+        display: none;
+    }
+
+    .register-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js cdn -->
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- =========== Top Bar section start =========== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between">
+
+                <div class="top-bar-left">
+                    <div class="email-info">
+                        <a href="mailto:info@eduplatform.com" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@eduplatform.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#" class="social-login text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="register-btn text-white">
+                        Register
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- =========== Top Bar section end =========== -->
+
+    <!-- =========== Main Navigation section start =========== -->
+    <nav class="main-nav fade-in">
+        <div class="container-fluid">
+            <div class="nav-container">
+                <!-- Two Logos -->
+                <div class="d-flex mx-auto res-show">
+
+                    <div class="logo-section">
+                        <a href="#" class="logo logo-1 fade-in-left">
+                            <img src="./images/WARD-Logo-Horizontal.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" class="logo logo-2 fade-in-left">
+                            <img src="./images/MBA-Final-Logo.png" loading="lazy" alt="">
+                        </a>
+                    </div>
+    
+                    <!-- Mobile Toggle -->
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation Items (6 items) -->
+                <ul class="nav-items mx-auto" id="navItems">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-book"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="fas fa-chalkboard-teacher"></i> Programmes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mba</a></li>
+                            <li><a class="dropdown-item" href="#">Master's</a></li>
+                            <li><a class="dropdown-item" href="#">Mba Application Form</a></li>
+                            <li><a class="dropdown-item" href="#">Master's Application Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="fas fa-users"></i> Affiliation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">European International University <br> (EIU-Paris)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-phone"></i>
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            
+                            Verify
+                        </a>
+                    </li>
+                    <!-- Search Section -->
+                    <div class="search-section">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Search courses, topics, instructors...">
+                            <button class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- =========== Main Navigation section end =========== -->
+    <!-- style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(images/hero_bg.png); background-position: center; background-size: cover; background-repeat: no-repeat;" -->
+
+    <!-- =========== hero area section start =========== -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- Left Content -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="hero-content">
+                        <div class="hero-badge fade-in-left">
+                            <i class="fas fa-star"></i>
+                            <span>Trusted by 50,000+ Students</span>
+                        </div>
+                        
+                        <h1 class="hero-title fade-in-up">
+                            Transform Your Future with 
+                            <span class="highlight">Quality Education</span>
+                        </h1>
+                        
+                        <p class="hero-description fade-in-up text-dark">
+                            Join thousands of learners worldwide and unlock your potential with our comprehensive online courses. Learn from industry experts and advance your career with practical skills.
+                        </p>
+                        
+                        <div class="hero-stats fade-in-up">
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Courses</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50K+</div>
+                                <div class="stat-label">Students</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Instructors</div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons fade-in-up">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-play-circle"></i>
+                                Start Learning
+                            </a>
+                            <a href="#" class="btn-secondary">
+                                <i class="fas fa-book-open"></i>
+                                Browse Courses
+                            </a>
+                        </div>
+                        
+                        <div class="hero-features fade-in-up">
+                            <div class="feature-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certified Courses</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lifetime Access</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="hero-visual">
+                        <div class="hero-image-container fade-in-right">
+                            <img src="./images/learn_bg.jpg" height="500" width="600" alt="Online Learning" class="hero-image">
+                            <div class="floating-card card-1 fade-in">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Web Development</h4>
+                                    <p>Complete Course</p>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card card-2 fade-in">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Digital Marketing</h4>
+                                    <p>Advanced Level</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card card-3 fade-in">
+                                <div class="card-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Live Session</h4>
+                                    <p>Starting in 15 min</p>
+                                    <div class="live-indicator">
+                                        <span class="live-dot"></span>
+                                        <span>25 students joined</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+    </section>
+    <!-- =========== hero area section end =========== -->
+
+
+    <!-- =========== academic program section end =========== -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <div class="section-badge">
+                    <i class="fas fa-university"></i>
+                    <span>Academic Excellence</span>
+                </div>
+                <h2>Advanced Degree Programs</h2>
+                <p>Elevate your career with our prestigious academic programs designed for working professionals</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- MBA Program -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="program-card fade-in-up">
+                        <div class="program-header">
+                            <div class="program-icon mba-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="program-badge">Most Popular</div>
+                        </div>
+                        <div class="program-content">
+                            <h3>MBA</h3>
+                            <h4>Master of Business Administration</h4>
+                            <p>Comprehensive business leadership program covering strategy, finance, marketing, and operations management.</p>
+                            
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>18-24 Months</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-laptop"></i>
+                                    <span>Online & Hybrid</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Executive Track</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">Job Placement</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$120K</span>
+                                    <span class="stat-label">Avg. Salary</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-actions">
+                                <a href="#" class="btn-program-primary">Learn More</a>
+                                <a href="#" class="btn-program-secondary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Masters Program -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="program-card fade-in-up">
+                        <div class="program-header">
+                            <div class="program-icon masters-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="program-content">
+                            <h3>Masters</h3>
+                            <h4>Master's Degree Programs</h4>
+                            <p>Specialized master's programs in technology, healthcare, education, and liberal arts fields.</p>
+                            
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12-18 Months</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-book"></i>
+                                    <span>15+ Specializations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Industry Certified</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <span class="stat-number">92%</span>
+                                    <span class="stat-label">Completion Rate</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$85K</span>
+                                    <span class="stat-label">Avg. Salary</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-actions">
+                                <a href="#" class="btn-program-primary">Learn More</a>
+                                <a href="#" class="btn-program-secondary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PhD Program -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="program-card fade-in-up">
+                        <div class="program-header">
+                            <div class="program-icon phd-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="program-badge premium-badge">Research Focus</div>
+                        </div>
+                        <div class="program-content">
+                            <h3>PhD</h3>
+                            <h4>Doctor of Philosophy</h4>
+                            <p>Advanced research-based doctoral programs for academic and industry leadership positions.</p>
+                            
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3-5 Years</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-search"></i>
+                                    <span>Research Based</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span>1:1 Mentorship</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <span class="stat-number">88%</span>
+                                    <span class="stat-label">Research Success</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$150K</span>
+                                    <span class="stat-label">Avg. Salary</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-actions">
+                                <a href="#" class="btn-program-primary">Learn More</a>
+                                <a href="#" class="btn-program-secondary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctorate Program -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="program-card fade-in-up">
+                        <div class="program-header">
+                            <div class="program-icon doctorate-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="program-badge executive-badge">Executive</div>
+                        </div>
+                        <div class="program-content">
+                            <h3>Doctorate</h3>
+                            <h4>Professional Doctorate</h4>
+                            <p>Practice-focused doctoral programs for senior executives and industry professionals.</p>
+                            
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2-3 Years</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>Executive Format</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Global Network</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <span class="stat-number">96%</span>
+                                    <span class="stat-label">Executive Level</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$180K</span>
+                                    <span class="stat-label">Avg. Salary</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-actions">
+                                <a href="#" class="btn-program-primary">Learn More</a>
+                                <a href="#" class="btn-program-secondary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom CTA -->
+            <div class="programs-cta text-center fade-in-up">
+                <h3 class="text-dark">Ready to Advance Your Career?</h3>
+                <p class="text-dark">Schedule a consultation with our academic advisors to find the perfect program for your goals</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-cta-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule Consultation
+                    </a>
+                    <a href="#" class="btn-cta-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Brochure
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- =========== academic program section start =========== -->
+
+
+
+    <!-- =========== about us section start =========== -->
+    <section class="about-us-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content Column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-content fade-in-left">
+                        <div class="section-badge">
+                            <i class="fas fa-globe"></i>
+                            <span>About Our Programs</span>
+                        </div>
+                        
+                        <h2 class="about-title">World Class <span class="highlight">MBA / Master's</span> for Global Career</h2>
+                        
+                        <div class="about-description">
+                            <p>World-class DBA, Doctorate, MBA programmes and best-in-class master's programmes that
+                            are validated, quality-assured, and degree-awarded by EIU-Paris. Want to
+                            accelerate your career globally? Join any of the programmes and become a
+                            globally recognised DBA, Doctorate, MBA or Master's graduate in different professional domains.</p>
+                        </div>
+                        
+                        <div class="program-highlights">
+                            <div class="highlight-item fade-in-up">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    Doctorate of Business Administration (DBA) Programme Validated, Quality Assured, & Degree Awarded by EIU-Paris
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item fade-in-up" style="animation-delay: 0.2s;">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    Professional Doctorate Programme Validated, Quality Assured, & Degree Awarded by EIU-Paris
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item fade-in-up" style="animation-delay: 0.3s;">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    Honorary Doctorate Programme Validated, Quality Assured, & Degree Awarded by EIU-Paris
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item fade-in-up" style="animation-delay: 0.4s;">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    MBA/Master's Programme Validated, Quality Assured, & Degree Awarded by EIU-Paris
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item fade-in-up" style="animation-delay: 0.5s;">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    Affordable Fees & Payment Plan (Scholarship Available)
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item fade-in-up" style="animation-delay: 0.6s;">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    Trusted by Thousands of Professionals
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item fade-in-up" style="animation-delay: 0.7s;">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    Accepted by Thousands of corporations Across the Globe
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- Right Image Column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-image-wrapper fade-in-right">
+                        <div class="about-image">
+                            <img src="https://www.mba-edu.uk/uploads/template_files/jeSlKhMaGmG7Hwb3nXgClCCdDgEgYYyX4DBbOrIa.webp" alt="MBA Education">
+                            <div class="image-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="image-badge badge-1">
+                            <div class="badge-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-number">100%</span>
+                                <span class="badge-label">Online Learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="image-badge badge-2">
+                            <div class="badge-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-number">Global</span>
+                                <span class="badge-label">Recognition</span>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-shape shape-1"></div>
+                        <div class="floating-shape shape-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-action fade-in-up text-center" style="animation-delay: 0.8s;">
+                            <a href="https://www.mba-edu.uk/courses" class="btn-about">Our Courses</a>
+            </div>
+        </div>
+    </section>
+    <!-- =========== about us section end =========== -->
+    
+    
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+
+    <!-- font awesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font awesome cdn -->
+
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper js cdn -->
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
