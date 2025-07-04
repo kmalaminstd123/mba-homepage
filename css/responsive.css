@@ -67,7 +67,7 @@
         gap: 15px;
     }
 
-    .floating-card {
+    .ban-floating-card {
         position: relative;
         margin: 20px 0;
     }
@@ -80,6 +80,240 @@
         left: auto;
         right: auto;
         bottom: auto;
+    }
+
+    .about-us-section {
+        padding: 70px 0;
+    }
+    
+    .about-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-image-wrapper {
+        margin-top: 50px;
+    }
+    
+    .image-badge {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 20px 0;
+        width: fit-content;
+    }
+    
+    .badge-1 {
+        margin-bottom: -60px;
+        margin-left: 20px;
+        z-index: 1;
+    }
+    
+    .badge-2 {
+        margin-top: -60px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .mba-title h1 {
+        font-size: 3.5rem;
+    }
+    
+    .mba-features {
+        gap: 15px;
+    }
+    
+    .feature-item {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 200px;
+    }
+    
+    .mba-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn-mba-primary, .btn-mba-secondary {
+        width: 100%;
+        justify-content: center;
+        max-width: 300px;
+    }
+    
+    .mba-stats {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .mba-visual {
+        margin-top: 50px;
+    }
+
+    .program-showcase-title {
+        font-size: 3rem;
+    }
+    
+    .program-showcase-highlights {
+        gap: 10px;
+    }
+    
+    .program-showcase-highlight-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+        justify-content: center;
+    }
+    
+    .program-showcase-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .program-showcase-btn-primary,
+    .program-showcase-btn-secondary {
+        width: 100%;
+        justify-content: center;
+        max-width: 280px;
+    }
+    
+    .program-showcase-visual {
+        margin-top: 40px;
+        min-height: auto;
+    }
+
+    .masters-program-title {
+        font-size: 3rem;
+    }
+    
+    .masters-program-highlights {
+        gap: 10px;
+    }
+    
+    .masters-program-highlight-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+        justify-content: center;
+    }
+    
+    .masters-program-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .masters-program-btn-primary,
+    .masters-program-btn-secondary {
+        width: 100%;
+        justify-content: center;
+        max-width: 280px;
+    }
+    
+    .masters-program-visual {
+        margin-top: 40px;
+        min-height: auto;
+    }
+
+    .dba-program-title {
+        font-size: 2.5rem;
+    }
+    
+    .dba-program-subtitle {
+        font-size: 2rem;
+    }
+    
+    .dba-program-features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .dba-program-visual {
+        margin-top: 40px;
+        min-height: auto;
+    }
+
+    .practitioners-doctorate-title {
+        font-size: 2.8rem;
+    }
+    
+    .practitioners-doctorate-features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .practitioners-doctorate-visual {
+        margin-top: 40px;
+        min-height: auto;
+    }
+
+    .honorary-doctorate-title {
+        font-size: 2.5rem;
+    }
+    
+    .honorary-doctorate-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .honorary-doctorate-highlights {
+        gap: 10px;
+    }
+    
+    .honorary-doctorate-highlight-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+        justify-content: center;
+    }
+    
+    .honorary-doctorate-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .honorary-doctorate-btn-primary {
+        width: 100%;
+        justify-content: center;
+        max-width: 280px;
+    }
+    
+    .honorary-doctorate-visual {
+        margin-top: 40px;
+        min-height: auto;
+    }
+
+    .professional-certificate-title {
+        font-size: 2.5rem;
+    }
+    
+    .professional-certificate-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .professional-certificate-highlights {
+        gap: 10px;
+    }
+    
+    .professional-certificate-highlight-item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+        justify-content: center;
+    }
+    
+    .professional-certificate-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .professional-certificate-btn-primary,
+    .professional-certificate-btn-secondary {
+        width: 100%;
+        justify-content: center;
+        max-width: 280px;
+    }
+    
+    .professional-certificate-visual {
+        margin-top: 40px;
+        min-height: auto;
     }
 }
 
@@ -133,6 +367,251 @@
     .category-card {
         margin-bottom: 30px;
     }
+
+    .about-us-section {
+        padding: 50px 0;
+    }
+    
+    .about-title {
+        font-size: 1.8rem;
+    }
+    
+    .highlight-item {
+        padding: 10px;
+    }
+    
+    .highlight-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .highlight-text {
+        font-size: 0.85rem;
+    }
+    
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .play-button i {
+        font-size: 1.4rem;
+    }
+    .mba-content {
+        padding: 40px 0;
+    }
+    
+    .mba-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .lead-paragraph {
+        font-size: 1.1rem;
+    }
+    
+    .secondary-paragraph {
+        font-size: 1rem;
+    }
+    
+    .feature-item {
+        flex: 1 1 100%;
+    }
+    
+    .mba-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .floating-card {
+        padding: 20px;
+    }
+
+    .program-showcase-section {
+        padding: 60px 0;
+    }
+    
+    .program-showcase-title {
+        font-size: 2.5rem;
+    }
+    
+    .program-showcase-lead {
+        font-size: 1rem;
+    }
+    
+    .program-showcase-secondary {
+        font-size: 0.95rem;
+    }
+    
+    .program-showcase-highlights {
+        flex-direction: column;
+    }
+    
+    .program-showcase-highlight-item {
+        flex: none;
+        justify-content: flex-start;
+    }
+    
+    .program-showcase-info-card {
+        padding: 25px;
+    }
+
+    .masters-program-section {
+        padding: 60px 0;
+    }
+    
+    .masters-program-title {
+        font-size: 2.5rem;
+    }
+    
+    .masters-program-lead {
+        font-size: 1rem;
+    }
+    
+    .masters-program-secondary {
+        font-size: 0.95rem;
+    }
+    
+    .masters-program-highlights {
+        flex-direction: column;
+    }
+    
+    .masters-program-highlight-item {
+        flex: none;
+        justify-content: flex-start;
+    }
+    
+    .masters-program-info-card {
+        padding: 25px;
+    }
+    
+    
+
+    .dba-program-section {
+        padding: 60px 0;
+    }
+    
+    .dba-program-title {
+        font-size: 2rem;
+    }
+    
+    .dba-program-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .dba-program-lead {
+        font-size: 1rem;
+    }
+    
+    .dba-program-feature-item {
+        padding: 12px 16px;
+    }
+    
+    .dba-program-info-card {
+        padding: 25px;
+    }
+    
+    
+
+    .practitioners-doctorate-section {
+        padding: 60px 0;
+    }
+    
+    .practitioners-doctorate-title {
+        font-size: 2.2rem;
+    }
+    
+    .practitioners-doctorate-lead {
+        font-size: 1rem;
+    }
+    
+    .practitioners-doctorate-secondary {
+        font-size: 0.95rem;
+    }
+    
+    .practitioners-doctorate-tertiary {
+        font-size: 0.9rem;
+    }
+    
+    .practitioners-doctorate-feature-item {
+        padding: 12px 16px;
+    }
+    
+    .practitioners-doctorate-info-card {
+        padding: 25px;
+    }
+    
+    .honorary-doctorate-section {
+        padding: 60px 0;
+    }
+    
+    .honorary-doctorate-title {
+        font-size: 2rem;
+    }
+    
+    .honorary-doctorate-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .honorary-doctorate-lead {
+        font-size: 1rem;
+    }
+    
+    .honorary-doctorate-secondary {
+        font-size: 0.95rem;
+    }
+    
+    .honorary-doctorate-tertiary {
+        font-size: 0.9rem;
+    }
+    
+    .honorary-doctorate-highlights {
+        flex-direction: column;
+    }
+    
+    .honorary-doctorate-highlight-item {
+        flex: none;
+        justify-content: flex-start;
+    }
+    
+    .honorary-doctorate-info-card {
+        padding: 25px;
+    }
+
+    .professional-certificate-section {
+        padding: 60px 0;
+    }
+    
+    .professional-certificate-title {
+        font-size: 2rem;
+    }
+    
+    .professional-certificate-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .professional-certificate-lead {
+        font-size: 1rem;
+    }
+    
+    .professional-certificate-secondary {
+        font-size: 0.95rem;
+    }
+    
+    .professional-certificate-highlights {
+        flex-direction: column;
+    }
+    
+    .professional-certificate-highlight-item {
+        flex: none;
+        justify-content: flex-start;
+    }
+    
+    .professional-certificate-info-card {
+        padding: 25px;
+        max-width: 100%;
+    }
+    
 }
 
 @media (max-width: 575.98px) {
@@ -147,5 +626,113 @@
     .register-btn {
         padding: 6px 12px;
         font-size: 12px;
+    }
+
+    .mba-title h1 {
+        font-size: 2rem;
+    }
+    
+    .mba-features {
+        flex-direction: column;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .program-showcase-title {
+        font-size: 2rem;
+    }
+    
+    .program-showcase-content {
+        padding: 30px 0;
+    }
+    
+    .program-showcase-description {
+        max-width: 100%;
+    }
+
+    .masters-program-title {
+        font-size: 2rem;
+    }
+    
+    .masters-program-content {
+        padding: 30px 0;
+    }
+    
+    .masters-program-description {
+        max-width: 100%;
+    }
+
+    .dba-program-title {
+        font-size: 1.8rem;
+    }
+    
+    .dba-program-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .dba-program-content {
+        padding: 30px 0;
+    }
+    
+    .dba-program-description {
+        max-width: 100%;
+    }
+    
+    .dba-program-features-grid {
+        gap: 10px;
+    }
+
+    .practitioners-doctorate-title {
+        font-size: 1.9rem;
+    }
+    
+    .practitioners-doctorate-content {
+        padding: 30px 0;
+    }
+    
+    .practitioners-doctorate-description {
+        max-width: 100%;
+    }
+    
+    .practitioners-doctorate-features-grid {
+        gap: 10px;
+    }
+
+    .honorary-doctorate-title {
+        font-size: 1.7rem;
+    }
+    
+    .honorary-doctorate-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .honorary-doctorate-content {
+        padding: 30px 0;
+    }
+    
+    .honorary-doctorate-description {
+        max-width: 100%;
+    }
+
+    .professional-certificate-title {
+        font-size: 1.7rem;
+    }
+    
+    .professional-certificate-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .professional-certificate-content {
+        padding: 30px 0;
+    }
+    
+    .professional-certificate-description {
+        max-width: 100%;
+    }
+    
+    .professional-certificate-institution {
+        font-size: 0.75rem;
     }
 }

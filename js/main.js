@@ -27,31 +27,31 @@ function toggleMobileMenu() {
 
 // Search functionality
 document.addEventListener('DOMContentLoaded', function () {
-    const searchInput = document.querySelector('.search-input');
-    const searchBtn = document.querySelector('.search-btn');
+    // const searchInput = document.querySelector('.search-input');
+    // const searchBtn = document.querySelector('.search-btn');
 
-    searchBtn.addEventListener('click', function () {
-        if (searchInput.value.trim()) {
-            // Add fade out animation to search button
-            searchBtn.classList.add('fade-out');
+    // searchBtn.addEventListener('click', function () {
+    //     if (searchInput.value.trim()) {
+    //         // Add fade out animation to search button
+    //         searchBtn.classList.add('fade-out');
 
-            setTimeout(() => {
-                alert('Searching for: ' + searchInput.value);
-                searchBtn.classList.remove('fade-out');
-                searchBtn.classList.add('fade-in');
+    //         setTimeout(() => {
+    //             alert('Searching for: ' + searchInput.value);
+    //             searchBtn.classList.remove('fade-out');
+    //             searchBtn.classList.add('fade-in');
 
-                setTimeout(() => {
-                    searchBtn.classList.remove('fade-in');
-                }, 500);
-            }, 250);
-        }
-    });
+    //             setTimeout(() => {
+    //                 searchBtn.classList.remove('fade-in');
+    //             }, 500);
+    //         }, 250);
+    //     }
+    // });
 
-    searchInput.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            searchBtn.click();
-        }
-    });
+    // searchInput.addEventListener('keypress', function (e) {
+    //     if (e.key === 'Enter') {
+    //         searchBtn.click();
+    //     }
+    // });
 
     // Navigation link active states with animations
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -107,6 +107,24 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 600);
         }, 300);
     });
+
+    // about video modal
+    const modal = document.getElementById('about_video_modal');
+    const videoFrame = document.getElementById('about_modal_video_frame');
+    const videoUrl = "https://www.youtube.com/embed/v8cOGXYZt5o?si=15xRgVhn2Fai4Ifl";
+
+    if (modal && videoFrame) {
+        // When modal opens → set src
+        modal.addEventListener('show.bs.modal', () => {
+            videoFrame.src = videoUrl;
+        });
+
+        // When modal closes → clear src
+        modal.addEventListener('hidden.bs.modal', () => {
+            videoFrame.src = "";
+        });
+    }
+
 });
 
 // Add scroll animations
