@@ -658,11 +658,13 @@
                     <h2 class="program-tabs-title">Explore Our Programs</h2>
                     <p class="program-tabs-subtitle">Choose from our comprehensive range of academic and professional programs</p>
                 </div>
+
+                
                 
                 <div class="program-tabs-wrapper">
-                    <div class="program-tabs-nav">
+                    <ul class="program-tabs-nav nav nav-tabs" id="programTabs" role="tablist">
 
-                        <button class="program-tab-btn active" data-bs-toggle="tab" data-bs-target="#mba" type="button" role="tab" aria-controls="mba" aria-selected="true">
+                        <button class="program-tab-btn nav-link active" data-bs-toggle="tab" data-bs-target="#mba" type="button" role="tab" aria-selected="true">
                             <div class="program-tab-icon">
                                 <i class="fas fa-briefcase"></i>
                             </div>
@@ -670,7 +672,7 @@
                             <div class="program-tab-indicator"></div>
                         </button>
 
-                        <button class="program-tab-btn" data-bs-toggle="tab" data-bs-target="#master" type="button" role="tab" aria-controls="master" aria-selected="false">
+                        <button class="program-tab-btn nav-link" data-bs-toggle="tab" data-bs-target="#master" type="button" role="tab" aria-selected="false">
                             <div class="program-tab-icon">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
@@ -678,7 +680,7 @@
                             <div class="program-tab-indicator"></div>
                         </button>
 
-                        <button class="program-tab-btn" data-bs-toggle="tab" data-bs-target="#dba" type="button" role="tab" aria-controls="dba" aria-selected="false">
+                        <button class="program-tab-btn nav-link" data-bs-toggle="tab" data-bs-target="#dba" type="button" role="tab" aria-selected="false">
                             <div class="program-tab-icon">
                                 <i class="fas fa-microscope"></i>
                             </div>
@@ -686,7 +688,7 @@
                             <div class="program-tab-indicator"></div>
                         </button>
 
-                        <button class="program-tab-btn" data-bs-toggle="tab" data-bs-target="#practitioners-doctorate" type="button" role="tab" aria-controls="practitioners-doctorate" aria-selected="false">
+                        <button class="program-tab-btn nav-link" data-bs-toggle="tab" data-bs-target="#practitioners-doctorate" type="button" role="tab" aria-selected="false">
                             <div class="program-tab-icon">
                                 <i class="fas fa-flask"></i>
                             </div>
@@ -694,7 +696,7 @@
                             <div class="program-tab-indicator"></div>
                         </button>
 
-                        <button class="program-tab-btn" data-bs-toggle="tab" data-bs-target="#honorary-doctorate" type="button" role="tab" aria-controls="honorary-doctorate" aria-selected="false">
+                        <button class="program-tab-btn nav-link" data-bs-toggle="tab" data-bs-target="#honorary-doctorate" type="button" role="tab" aria-selected="false">
                             <div class="program-tab-icon">
                                 <i class="fas fa-medal"></i>
                             </div>
@@ -702,844 +704,883 @@
                             <div class="program-tab-indicator"></div>
                         </button>
 
-                        <button class="program-tab-btn" data-bs-toggle="tab" data-bs-target="#professional-certificate" type="button" role="tab" aria-controls="professional-certificate" aria-selected="false">
+                        <button class="program-tab-btn nav-link" data-bs-toggle="tab" data-bs-target="#professional-certificate" type="button" role="tab" aria-selected="false">
                             <div class="program-tab-icon">
                                 <i class="fas fa-certificate"></i>
                             </div>
                             <span class="program-tab-text">Professional Certificate</span>
                             <div class="program-tab-indicator"></div>
                         </button>
-                    </div>
+                    </ul>
                     
-                    <!-- Mobile Dropdown for smaller screens -->
-                    <div class="program-tabs-mobile">
-                        <div class="program-tabs-dropdown">
-                            <button class="program-tabs-dropdown-btn">
-                                <span class="program-tabs-dropdown-text">MBA</span>
-                                <i class="fas fa-chevron-down"></i>
+                    
+                   <!-- Mobile Dropdown for smaller screens -->
+                    <div class="program-tabs-mobile d-md-none">
+                        <div class="dropdown program-tabs-dropdown">
+                            <button class="btn dropdown-toggle program-tabs-dropdown-btn" type="button" id="programDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="program-tabs-dropdown-text">MBA</span>
                             </button>
-                            <div class="program-tabs-dropdown-menu">
-                                <a href="#mba" class="program-tabs-dropdown-item active">
-                                    <i class="fas fa-briefcase"></i>
-                                    <span>MBA</span>
-                                </a>
-                                <a href="#master" class="program-tabs-dropdown-item">
-                                    <i class="fas fa-graduation-cap"></i>
-                                    <span>Masters</span>
-                                </a>
-                                <a href="#dba" class="program-tabs-dropdown-item">
-                                    <i class="fas fa-microscope"></i>
-                                    <span>DBA</span>
-                                </a>
-                                <a href="#practitioners-doctorate" class="program-tabs-dropdown-item">
-                                    <i class="fas fa-flask"></i>
-                                    <span>Practitioners Doctorate</span>
-                                </a>
-                                <a href="#honorary-doctorate" class="program-tabs-dropdown-item">
-                                    <i class="fas fa-medal"></i>
-                                    <span>Honorary Doctorate</span>
-                                </a>
-                                <a href="#professional-certificate" class="program-tabs-dropdown-item">
-                                    <i class="fas fa-certificate"></i>
-                                    <span>Professional Certificate</span>
-                                </a>
-                            </div>
+                            <ul class="dropdown-menu program-tabs-dropdown-menu" aria-labelledby="programDropdown">
+                                <li>
+                                    <a class="dropdown-item program-tabs-dropdown-item active" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#mba">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>MBA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item program-tabs-dropdown-item" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#master">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>Masters</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item program-tabs-dropdown-item" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#dba">
+                                        <i class="fas fa-microscope"></i>
+                                        <span>DBA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item program-tabs-dropdown-item" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#practitioners-doctorate">
+                                        <i class="fas fa-flask"></i>
+                                        <span>Practitioners Doctorate</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item program-tabs-dropdown-item" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#honorary-doctorate">
+                                        <i class="fas fa-medal"></i>
+                                        <span>Honorary Doctorate</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item program-tabs-dropdown-item" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#professional-certificate">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Professional Certificate</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </div>  
+
                 </div>
             </div>
         </div>
     </section>
     <!-- program showcase tab buttons end -->
 
-    <div class="tab-conten">
+    
+    <!-- program showcase tab content start -->
+    <!-- Tab content -->
+    <div class="tab-content">
 
-    
-        <!-- =========== mba program section start =========== -->
-        <!-- Program Showcase Section (Reusable for MBA, Masters, DBA, etc.) -->
-        <section class="program-showcase-section tab-pane fade show active" aria-labelledby="mba_prog-tab" id="mba">
-            <div class="program-showcase-container">
-                <div class="program-showcase-background">
-                    <img src="https://www.mba-edu.uk/img/MBA-01.jpg" alt="MBA Program" class="program-showcase-bg-image">
-                    <div class="program-showcase-overlay"></div>
-                </div>
-                
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-12">
-                            <div class="program-showcase-content fade-in-left">
-                                <div class="program-showcase-badge fade-in-up">
-                                    <div class="program-showcase-badge-icon">
-                                        <i class="fas fa-briefcase"></i>
+        <div class="tab-pane fade show active" id="mba" role="tabpanel">
+            <!-- =========== mba program section start =========== -->
+            <section class="program-showcase-section" id="mba">
+                <div class="program-showcase-container">
+                    <div class="program-showcase-background">
+                        <img src="https://www.mba-edu.uk/img/MBA-01.jpg" alt="MBA Program" class="program-showcase-bg-image">
+                        <div class="program-showcase-overlay"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="program-showcase-content fade-in-left">
+                                    <div class="program-showcase-badge fade-in-up">
+                                        <div class="program-showcase-badge-icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <span class="program-showcase-badge-text">Master of Business Administration</span>
                                     </div>
-                                    <span class="program-showcase-badge-text">Master of Business Administration</span>
-                                </div>
-                                
-                                <div class="program-showcase-header fade-in-up" style="animation-delay: 0.2s;">
-                                    <h1 class="program-showcase-title">MBA</h1>
-                                    <div class="program-showcase-title-accent"></div>
-                                </div>
-                                
-                                <div class="program-showcase-description fade-in-up" style="animation-delay: 0.4s;">
-                                    <p class="program-showcase-lead">
-                                        If you are interested in pursuing a Master's in Business Administration (MBA) degree, but you don't have the time or resources to attend a traditional program, you might consider a self-study based program. Self-study online is a flexible and convenient way to learn the core concepts and skills of business administration, such as accounting, finance, marketing, strategy, leadership, Entrepreneurship, Business Administration etc.
-                                    </p>
                                     
-                                    <p class="program-showcase-secondary">
-                                        You can study at your own pace, from anywhere in the world, and choose from <strong>32 specialized areas</strong>. Whether you want to start your own business, move into a leadership role, or switch industries, this MBA degree can help you get there. This recognized credential will boost your resume and salary potential.
-                                    </p>
-                                </div>
-                                
-                                <div class="program-showcase-highlights fade-in-up" style="animation-delay: 0.6s;">
-                                    <div class="program-showcase-highlight-item">
-                                        <i class="fas fa-clock"></i>
-                                        <span>Self-Paced</span>
+                                    <div class="program-showcase-header fade-in-up" style="animation-delay: 0.2s;">
+                                        <h1 class="program-showcase-title">MBA</h1>
+                                        <div class="program-showcase-title-accent"></div>
                                     </div>
-                                    <div class="program-showcase-highlight-item">
-                                        <i class="fas fa-laptop"></i>
-                                        <span>100% Online</span>
+                                    
+                                    <div class="program-showcase-description fade-in-up" style="animation-delay: 0.4s;">
+                                        <p class="program-showcase-lead">
+                                            If you are interested in pursuing a Master's in Business Administration (MBA) degree, but you don't have the time or resources to attend a traditional program, you might consider a self-study based program. Self-study online is a flexible and convenient way to learn the core concepts and skills of business administration, such as accounting, finance, marketing, strategy, leadership, Entrepreneurship, Business Administration etc.
+                                        </p>
+                                        
+                                        <p class="program-showcase-secondary">
+                                            You can study at your own pace, from anywhere in the world, and choose from <strong>32 specialized areas</strong>. Whether you want to start your own business, move into a leadership role, or switch industries, this MBA degree can help you get there. This recognized credential will boost your resume and salary potential.
+                                        </p>
                                     </div>
-                                    <div class="program-showcase-highlight-item">
-                                        <i class="fas fa-graduation-cap"></i>
-                                        <span>32 Specializations</span>
+                                    
+                                    <div class="program-showcase-highlights fade-in-up" style="animation-delay: 0.6s;">
+                                        <div class="program-showcase-highlight-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>Self-Paced</span>
+                                        </div>
+                                        <div class="program-showcase-highlight-item">
+                                            <i class="fas fa-laptop"></i>
+                                            <span>100% Online</span>
+                                        </div>
+                                        <div class="program-showcase-highlight-item">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <span>32 Specializations</span>
+                                        </div>
+                                        <div class="program-showcase-highlight-item">
+                                            <i class="fas fa-certificate"></i>
+                                            <span>Globally Recognized</span>
+                                        </div>
                                     </div>
-                                    <div class="program-showcase-highlight-item">
-                                        <i class="fas fa-certificate"></i>
-                                        <span>Globally Recognized</span>
+                                    
+                                    <div class="program-showcase-actions fade-in-up" style="animation-delay: 0.8s;">
+                                        <a href="https://mba-edu.uk/mba" target="_blank" class="program-showcase-btn-primary">
+                                            <span>Learn More</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a href="https://www.mba-edu.uk/application_form" target="_blank" class="program-showcase-btn-secondary">
+                                            <span>Apply Now</span>
+                                        </a>
                                     </div>
-                                </div>
-                                
-                                <div class="program-showcase-actions fade-in-up" style="animation-delay: 0.8s;">
-                                    <a href="https://mba-edu.uk/mba" target="_blank" class="program-showcase-btn-primary">
-                                        <span>Learn More</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                    <a href="https://www.mba-edu.uk/application_form" target="_blank" class="program-showcase-btn-secondary">
-                                        <span>Apply Now</span>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12">
-                            <div class="program-showcase-visual fade-in-right">
-                                <div class="program-showcase-info-card">
-                                    <div class="program-showcase-card-header">
-                                        <div class="program-showcase-card-icon">
-                                            <i class="fas fa-chart-bar"></i>
+                            
+                            <div class="col-lg-5 col-md-12">
+                                <div class="program-showcase-visual fade-in-right">
+                                    <div class="program-showcase-info-card">
+                                        <div class="program-showcase-card-header">
+                                            <div class="program-showcase-card-icon">
+                                                <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                            <h4 class="program-showcase-card-title">Program Overview</h4>
                                         </div>
-                                        <h4 class="program-showcase-card-title">Program Overview</h4>
+                                        
+                                        <div class="program-showcase-card-stats">
+                                            <div class="program-showcase-stat">
+                                                <div class="program-showcase-stat-number">18-24</div>
+                                                <div class="program-showcase-stat-label">Months</div>
+                                            </div>
+                                            <div class="program-showcase-stat">
+                                                <div class="program-showcase-stat-number">32+</div>
+                                                <div class="program-showcase-stat-label">Specializations</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="program-showcase-card-features">
+                                            <div class="program-showcase-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Flexible Schedule</span>
+                                            </div>
+                                            <div class="program-showcase-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Expert Faculty</span>
+                                            </div>
+                                            <div class="program-showcase-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Career Support</span>
+                                            </div>
+                                            <div class="program-showcase-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Global Network</span>
+                                            </div>
+                                        </div>
                                     </div>
                                     
-                                    <div class="program-showcase-card-stats">
-                                        <div class="program-showcase-stat">
-                                            <div class="program-showcase-stat-number">18-24</div>
-                                            <div class="program-showcase-stat-label">Months</div>
+                                    <div class="program-showcase-floating-badge">
+                                        <div class="program-showcase-floating-icon">
+                                            <i class="fas fa-star"></i>
                                         </div>
-                                        <div class="program-showcase-stat">
-                                            <div class="program-showcase-stat-number">32+</div>
-                                            <div class="program-showcase-stat-label">Specializations</div>
+                                        <div class="program-showcase-floating-text">
+                                            <span class="program-showcase-floating-title">Top Rated</span>
+                                            <span class="program-showcase-floating-subtitle">Program</span>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="program-showcase-card-features">
-                                        <div class="program-showcase-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Flexible Schedule</span>
-                                        </div>
-                                        <div class="program-showcase-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Expert Faculty</span>
-                                        </div>
-                                        <div class="program-showcase-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Career Support</span>
-                                        </div>
-                                        <div class="program-showcase-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Global Network</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="program-showcase-floating-badge">
-                                    <div class="program-showcase-floating-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="program-showcase-floating-text">
-                                        <span class="program-showcase-floating-title">Top Rated</span>
-                                        <span class="program-showcase-floating-subtitle">Program</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- =========== mba program section end =========== -->
-    
-    
-        <!-- =========== master program section start =========== -->
-        <!-- Master's Program Section -->
-        <section class="masters-program-section tab-pane fade" id="master" role="tabpanel" aria-labelledby="master-tab">
-            <div class="masters-program-container">
-                <div class="masters-program-background">
-                    <img src="https://www.mba-edu.uk/img/Master's.jpg" alt="Master's Program" class="masters-program-bg-image">
-                    <div class="masters-program-overlay"></div>
-                </div>
-                
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-12">
-                            <div class="masters-program-content fade-in-left">
-                                <div class="masters-program-badge fade-in-up">
-                                    <div class="masters-program-badge-icon">
-                                        <i class="fas fa-graduation-cap"></i>
-                                    </div>
-                                    <span class="masters-program-badge-text">Advanced Degree Programs</span>
-                                </div>
-                                
-                                <div class="masters-program-header fade-in-up" style="animation-delay: 0.2s;">
-                                    <h1 class="masters-program-title">Master's</h1>
-                                    <div class="masters-program-title-accent"></div>
-                                </div>
-                                
-                                <div class="masters-program-description fade-in-up" style="animation-delay: 0.4s;">
-                                    <p class="masters-program-lead">
-                                        If you are looking for a way to advance your career and learn new skills, you might want to consider pursuing a master's degree through distance learning. Distance learning or self-paced learning programs allow you to study at your own pace, any time & from anywhere in the world with minimal costs. You can choose from <strong>6 areas of specialization</strong> that we are currently offering (Master's/Master of Science).
-                                    </p>
-                                    
-                                    <p class="masters-program-secondary">
-                                        Self-study online programs also offer flexibility and convenience, as you can access the course materials and assignments anytime and anywhere. And with the chat option, you will be assisted throughout the process. The program is ideally designed for professionals who want to enhance their knowledge and credentials, without sacrificing their work or personal commitments.
-                                    </p>
-                                </div>
-                                
-                                <div class="masters-program-highlights fade-in-up" style="animation-delay: 0.6s;">
-                                    <div class="masters-program-highlight-item">
-                                        <i class="fas fa-clock"></i>
-                                        <span>Self-Paced Learning</span>
-                                    </div>
-                                    <div class="masters-program-highlight-item">
-                                        <i class="fas fa-globe"></i>
-                                        <span>Study Anywhere</span>
-                                    </div>
-                                    <div class="masters-program-highlight-item">
-                                        <i class="fas fa-dollar-sign"></i>
-                                        <span>Minimal Costs</span>
-                                    </div>
-                                    <div class="masters-program-highlight-item">
-                                        <i class="fas fa-comments"></i>
-                                        <span>Chat Support</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="masters-program-actions fade-in-up" style="animation-delay: 0.8s;">
-                                    <a href="https://www.mba-edu.uk/masters" target="_blank" class="masters-program-btn-primary">
-                                        <span>Learn More</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                    <a href="https://www.mba-edu.uk/masters_application_form" target="_blank" class="masters-program-btn-secondary">
-                                        <span>Apply Now</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12">
-                            <div class="masters-program-visual fade-in-right">
-                                <div class="masters-program-info-card">
-                                    <div class="masters-program-card-header">
-                                        <div class="masters-program-card-icon">
-                                            <i class="fas fa-book-open"></i>
-                                        </div>
-                                        <h4 class="masters-program-card-title">Master's Programs</h4>
-                                    </div>
-                                    
-                                    <div class="masters-program-card-stats">
-                                        <div class="masters-program-stat">
-                                            <div class="masters-program-stat-number">6</div>
-                                            <div class="masters-program-stat-label">Specializations</div>
-                                        </div>
-                                        <div class="masters-program-stat">
-                                            <div class="masters-program-stat-number">100%</div>
-                                            <div class="masters-program-stat-label">Online</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="masters-program-card-features">
-                                        <div class="masters-program-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Distance Learning</span>
-                                        </div>
-                                        <div class="masters-program-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Professional Focus</span>
-                                        </div>
-                                        <div class="masters-program-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>24/7 Chat Support</span>
-                                        </div>
-                                        <div class="masters-program-feature">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Work-Life Balance</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="masters-program-floating-badge">
-                                    <div class="masters-program-floating-icon">
-                                        <i class="fas fa-award"></i>
-                                    </div>
-                                    <div class="masters-program-floating-text">
-                                        <span class="masters-program-floating-title">Flexible</span>
-                                        <span class="masters-program-floating-subtitle">Learning</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </section>
+            <!-- =========== mba program section end =========== -->
+        </div>
+
+        <div class="tab-pane fade" id="master" role="tabpanel">
+            <!-- =========== master program section start =========== -->
+            <!-- Master's Program Section -->
+            <section class="masters-program-section" id="master" >
+                <div class="masters-program-container">
+                    <div class="masters-program-background">
+                        <img src="https://www.mba-edu.uk/img/Master's.jpg" alt="Master's Program" class="masters-program-bg-image">
+                        <div class="masters-program-overlay"></div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========== master program section end =========== -->
-    
-    
-        <!-- =========== Dba program section start =========== -->
-        <!-- DBA Program Section -->
-        <section class="dba-program-section tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0" id="dba">
-            <div class="dba-program-container">
-                <div class="dba-program-background">
-                    <img src="https://www.mba-edu.uk/img/DBA.jpg" alt="DBA Program" class="dba-program-bg-image">
-                    <div class="dba-program-overlay"></div>
-                </div>
-                
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-12">
-                            <div class="dba-program-content fade-in-left">
-                                <div class="dba-program-badge fade-in-up">
-                                    <div class="dba-program-badge-icon">
-                                        <i class="fas fa-user-graduate"></i>
+                    
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="masters-program-content fade-in-left">
+                                    <div class="masters-program-badge fade-in-up">
+                                        <div class="masters-program-badge-icon">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                        <span class="masters-program-badge-text">Advanced Degree Programs</span>
                                     </div>
-                                    <span class="dba-program-badge-text">Research-Based Professional Degree</span>
+                                    
+                                    <div class="masters-program-header fade-in-up" style="animation-delay: 0.2s;">
+                                        <h1 class="masters-program-title">Master's</h1>
+                                        <div class="masters-program-title-accent"></div>
+                                    </div>
+                                    
+                                    <div class="masters-program-description fade-in-up" style="animation-delay: 0.4s;">
+                                        <p class="masters-program-lead">
+                                            If you are looking for a way to advance your career and learn new skills, you might want to consider pursuing a master's degree through distance learning. Distance learning or self-paced learning programs allow you to study at your own pace, any time & from anywhere in the world with minimal costs. You can choose from <strong>6 areas of specialization</strong> that we are currently offering (Master's/Master of Science).
+                                        </p>
+                                        
+                                        <p class="masters-program-secondary">
+                                            Self-study online programs also offer flexibility and convenience, as you can access the course materials and assignments anytime and anywhere. And with the chat option, you will be assisted throughout the process. The program is ideally designed for professionals who want to enhance their knowledge and credentials, without sacrificing their work or personal commitments.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="masters-program-highlights fade-in-up" style="animation-delay: 0.6s;">
+                                        <div class="masters-program-highlight-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span>Self-Paced Learning</span>
+                                        </div>
+                                        <div class="masters-program-highlight-item">
+                                            <i class="fas fa-globe"></i>
+                                            <span>Study Anywhere</span>
+                                        </div>
+                                        <div class="masters-program-highlight-item">
+                                            <i class="fas fa-dollar-sign"></i>
+                                            <span>Minimal Costs</span>
+                                        </div>
+                                        <div class="masters-program-highlight-item">
+                                            <i class="fas fa-comments"></i>
+                                            <span>Chat Support</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="masters-program-actions fade-in-up" style="animation-delay: 0.8s;">
+                                        <a href="https://www.mba-edu.uk/masters" target="_blank" class="masters-program-btn-primary">
+                                            <span>Learn More</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a href="https://www.mba-edu.uk/masters_application_form" target="_blank" class="masters-program-btn-secondary">
+                                            <span>Apply Now</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                
-                                <div class="dba-program-header fade-in-up" style="animation-delay: 0.2s;">
-                                    <h1 class="dba-program-title">Doctorate in Business Administration</h1>
-                                    <h2 class="dba-program-subtitle">(DBA)</h2>
-                                    <div class="dba-program-title-accent"></div>
-                                </div>
-                                
-                                <div class="dba-program-description fade-in-up" style="animation-delay: 0.4s;">
-                                    <p class="dba-program-lead">
-                                        DBA Fully Online is a program that allows you to earn a Doctor of Business Administration degree from the comfort of your home or office. Interact with your supervisor through online discussion. This <strong>Research based professional degree</strong> is designed for working professionals who want to advance their careers, enhance their skills, and contribute to the field of business administration.
-                                    </p>
-                                </div>
-                                
-                                <div class="dba-program-features-section fade-in-up" style="animation-delay: 0.6s;">
-                                    <h3 class="dba-program-features-title">Program Features</h3>
-                                    <div class="dba-program-features-grid">
-                                        <div class="dba-program-feature-item">
-                                            <div class="dba-program-feature-icon">
-                                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            
+                            <div class="col-lg-5 col-md-12">
+                                <div class="masters-program-visual fade-in-right">
+                                    <div class="masters-program-info-card">
+                                        <div class="masters-program-card-header">
+                                            <div class="masters-program-card-icon">
+                                                <i class="fas fa-book-open"></i>
                                             </div>
-                                            <span class="dba-program-feature-text">Affordable Fees</span>
+                                            <h4 class="masters-program-card-title">Master's Programs</h4>
                                         </div>
                                         
-                                        <div class="dba-program-feature-item">
-                                            <div class="dba-program-feature-icon">
-                                                <i class="fas fa-graduation-cap"></i>
+                                        <div class="masters-program-card-stats">
+                                            <div class="masters-program-stat">
+                                                <div class="masters-program-stat-number">6</div>
+                                                <div class="masters-program-stat-label">Specializations</div>
                                             </div>
-                                            <span class="dba-program-feature-text">Partial Scholarship Available</span>
+                                            <div class="masters-program-stat">
+                                                <div class="masters-program-stat-number">100%</div>
+                                                <div class="masters-program-stat-label">Online</div>
+                                            </div>
                                         </div>
                                         
-                                        <div class="dba-program-feature-item">
-                                            <div class="dba-program-feature-icon">
-                                                <i class="fas fa-credit-card"></i>
+                                        <div class="masters-program-card-features">
+                                            <div class="masters-program-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Distance Learning</span>
                                             </div>
-                                            <span class="dba-program-feature-text">Instalment Payment Option</span>
-                                        </div>
-                                        
-                                        <div class="dba-program-feature-item">
-                                            <div class="dba-program-feature-icon">
-                                                <i class="fas fa-user-tie"></i>
+                                            <div class="masters-program-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Professional Focus</span>
                                             </div>
-                                            <span class="dba-program-feature-text">Connect with the Supervisor</span>
-                                        </div>
-                                        
-                                        <div class="dba-program-feature-item">
-                                            <div class="dba-program-feature-icon">
-                                                <i class="fas fa-award"></i>
+                                            <div class="masters-program-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>24/7 Chat Support</span>
                                             </div>
-                                            <span class="dba-program-feature-text">Opportunity to Attend Convocation</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="dba-program-actions fade-in-up" style="animation-delay: 0.8s;">
-                                    <a href="https://higher-education.us/" target="_blank" class="dba-program-btn-primary">
-                                        <span>Learn More</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12">
-                            <div class="dba-program-visual fade-in-right">
-                                <div class="dba-program-info-card">
-                                    <div class="dba-program-card-header">
-                                        <div class="dba-program-card-icon">
-                                            <i class="fas fa-microscope"></i>
-                                        </div>
-                                        <h4 class="dba-program-card-title">DBA Program</h4>
-                                        <p class="dba-program-card-subtitle">Research-Based Doctorate</p>
-                                    </div>
-                                    
-                                    <div class="dba-program-card-stats">
-                                        <div class="dba-program-stat">
-                                            <div class="dba-program-stat-number">100%</div>
-                                            <div class="dba-program-stat-label">Online</div>
-                                        </div>
-                                        <div class="dba-program-stat">
-                                            <div class="dba-program-stat-number">1:1</div>
-                                            <div class="dba-program-stat-label">Supervision</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="dba-program-card-highlights">
-                                        <div class="dba-program-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Research Focus</span>
-                                        </div>
-                                        <div class="dba-program-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Working Professionals</span>
-                                        </div>
-                                        <div class="dba-program-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Flexible Schedule</span>
-                                        </div>
-                                        <div class="dba-program-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Expert Supervision</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="dba-program-floating-badge">
-                                    <div class="dba-program-floating-icon">
-                                        <i class="fas fa-trophy"></i>
-                                    </div>
-                                    <div class="dba-program-floating-text">
-                                        <span class="dba-program-floating-title">Doctoral</span>
-                                        <span class="dba-program-floating-subtitle">Degree</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========== Dba program section end =========== -->
-    
-    
-        <!-- =========== Practioners doctorate program section start =========== -->
-        <!-- Practitioners Doctorate Program Section -->
-        <section class="practitioners-doctorate-section tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0" id="practitioners-doctorate">
-            <div class="practitioners-doctorate-container">
-                <div class="practitioners-doctorate-background">
-                    <img src="https://www.mba-edu.uk/img/Practitionar%20Doctorate.jpeg" alt="Practitioners Doctorate Program" class="practitioners-doctorate-bg-image">
-                    <div class="practitioners-doctorate-overlay"></div>
-                </div>
-                
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-12">
-                            <div class="practitioners-doctorate-content fade-in-left">
-                                <div class="practitioners-doctorate-badge fade-in-up">
-                                    <div class="practitioners-doctorate-badge-icon">
-                                        <i class="fas fa-flask"></i>
-                                    </div>
-                                    <span class="practitioners-doctorate-badge-text">Practice-Based Research</span>
-                                </div>
-                                
-                                <div class="practitioners-doctorate-header fade-in-up" style="animation-delay: 0.2s;">
-                                    <h1 class="practitioners-doctorate-title">Practitioners Doctorate</h1>
-                                    <div class="practitioners-doctorate-title-accent"></div>
-                                </div>
-                                
-                                <div class="practitioners-doctorate-description fade-in-up" style="animation-delay: 0.4s;">
-                                    <p class="practitioners-doctorate-lead">
-                                        Are you looking for a way to advance your career in the field of <strong>practice-based research</strong>? Do you want to earn a Practitioners Doctorate degree without compromising your work-life balance? If so, you might be interested in our fully online program that offers flexible and personalized learning opportunities.
-                                    </p>
-                                    
-                                    <p class="practitioners-doctorate-secondary">
-                                        Your prior contribution of extensive research on a specific scholarly work such as <strong>publication, article, books or a book chapter</strong> shall be presented as thesis to external examiner for defense.
-                                    </p>
-                                    
-                                    <p class="practitioners-doctorate-tertiary">
-                                        Whether you are a practitioner in <strong>education, health, social work</strong>, or any other discipline, the Practitioners Doctorate program can help you achieve your professional goals and make a positive impact on your field.
-                                    </p>
-                                </div>
-                                
-                                <div class="practitioners-doctorate-features-section fade-in-up" style="animation-delay: 0.6s;">
-                                    <h3 class="practitioners-doctorate-features-title">Program Features</h3>
-                                    <div class="practitioners-doctorate-features-grid">
-                                        <div class="practitioners-doctorate-feature-item">
-                                            <div class="practitioners-doctorate-feature-icon">
-                                                <i class="fas fa-dollar-sign"></i>
+                                            <div class="masters-program-feature">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Work-Life Balance</span>
                                             </div>
-                                            <span class="practitioners-doctorate-feature-text">Affordable Fees</span>
-                                        </div>
-                                        
-                                        <div class="practitioners-doctorate-feature-item">
-                                            <div class="practitioners-doctorate-feature-icon">
-                                                <i class="fas fa-graduation-cap"></i>
-                                            </div>
-                                            <span class="practitioners-doctorate-feature-text">Partial Scholarship Available</span>
-                                        </div>
-                                        
-                                        <div class="practitioners-doctorate-feature-item">
-                                            <div class="practitioners-doctorate-feature-icon">
-                                                <i class="fas fa-credit-card"></i>
-                                            </div>
-                                            <span class="practitioners-doctorate-feature-text">Instalment Payment Option</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="practitioners-doctorate-actions fade-in-up" style="animation-delay: 0.8s;">
-                                    <a href="https://higher-education.us/" target="_blank" class="practitioners-doctorate-btn-primary">
-                                        <span>Learn More</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12">
-                            <div class="practitioners-doctorate-visual fade-in-right">
-                                <div class="practitioners-doctorate-info-card">
-                                    <div class="practitioners-doctorate-card-header">
-                                        <div class="practitioners-doctorate-card-icon">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                        <h4 class="practitioners-doctorate-card-title">Practitioners Doctorate</h4>
-                                        <p class="practitioners-doctorate-card-subtitle">Practice-Based Research</p>
-                                    </div>
-                                    
-                                    <div class="practitioners-doctorate-card-stats">
-                                        <div class="practitioners-doctorate-stat">
-                                            <div class="practitioners-doctorate-stat-number">100%</div>
-                                            <div class="practitioners-doctorate-stat-label">Online</div>
-                                        </div>
-                                        <div class="practitioners-doctorate-stat">
-                                            <div class="practitioners-doctorate-stat-number">Prior</div>
-                                            <div class="practitioners-doctorate-stat-label">Research</div>
                                         </div>
                                     </div>
                                     
-                                    <div class="practitioners-doctorate-card-highlights">
-                                        <div class="practitioners-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Flexible Learning</span>
-                                        </div>
-                                        <div class="practitioners-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Work-Life Balance</span>
-                                        </div>
-                                        <div class="practitioners-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>External Defense</span>
-                                        </div>
-                                        <div class="practitioners-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Multi-Disciplinary</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="practitioners-doctorate-floating-badge">
-                                    <div class="practitioners-doctorate-floating-icon">
-                                        <i class="fas fa-lightbulb"></i>
-                                    </div>
-                                    <div class="practitioners-doctorate-floating-text">
-                                        <span class="practitioners-doctorate-floating-title">Practice</span>
-                                        <span class="practitioners-doctorate-floating-subtitle">Based</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========== Practioners doctorate program section end =========== -->
-    
-    
-        <!-- =========== honorary doctorate program section start =========== -->
-        <!-- Honorary Doctorate Program Section -->
-        <section class="honorary-doctorate-section tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0" id="honorary-doctorate" style="background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('https://www.mba-edu.uk/img/honor-doct.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%; height: auto;">
-            <div class="honorary-doctorate-container">
-                <!-- <div class="honorary-doctorate-background">
-                    <img src="https://www.mba-edu.uk/img/honor-doct.jpg" alt="Honorary Doctorate Program" class="honorary-doctorate-bg-image">
-                    <div class="honorary-doctorate-overlay"></div>
-                </div> -->
-                
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-12">
-                            <div class="honorary-doctorate-content fade-in-left">
-                                <div class="honorary-doctorate-badge fade-in-up">
-                                    <div class="honorary-doctorate-badge-icon">
-                                        <i class="fas fa-medal"></i>
-                                    </div>
-                                    <span class="honorary-doctorate-badge-text">Recognition of Excellence</span>
-                                </div>
-                                
-                                <div class="honorary-doctorate-header fade-in-up" style="animation-delay: 0.2s;">
-                                    <h1 class="honorary-doctorate-title">Honorary Doctorate</h1>
-                                    <h2 class="honorary-doctorate-subtitle">for Scholars</h2>
-                                    <div class="honorary-doctorate-title-accent"></div>
-                                </div>
-                                
-                                <div class="honorary-doctorate-description fade-in-up" style="animation-delay: 0.4s;">
-                                    <p class="honorary-doctorate-lead">
-                                        Are you looking for a way to advance your career in the field of practice-based research? Do you want to earn a Practitioners Doctorate degree without compromising your work-life balance? If so, you might be interested in our fully online program that offers flexible and personalized learning opportunities.
-                                    </p>
-                                    
-                                    <p class="honorary-doctorate-secondary">
-                                        Your prior contribution of extensive research on a specific scholarly work such as <strong>publication, article, books or a book chapter</strong> shall be presented as thesis to external examiner for defense.
-                                    </p>
-                                    
-                                    <p class="honorary-doctorate-tertiary">
-                                        Whether you are a practitioner in <strong>education, health, social work</strong>, or any other discipline, the Practitioners Doctorate program can help you achieve your professional goals and make a positive impact on your field.
-                                    </p>
-                                </div>
-                                
-                                <div class="honorary-doctorate-highlights fade-in-up" style="animation-delay: 0.6s;">
-                                    <div class="honorary-doctorate-highlight-item">
-                                        <i class="fas fa-dollar-sign"></i>
-                                        <span>Affordable Fees</span>
-                                    </div>
-                                    <div class="honorary-doctorate-highlight-item">
-                                        <i class="fas fa-graduation-cap"></i>
-                                        <span>Partial Scholarship Available</span>
-                                    </div>
-                                    <div class="honorary-doctorate-highlight-item">
-                                        <i class="fas fa-credit-card"></i>
-                                        <span>Instalment Payment Option</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="honorary-doctorate-actions fade-in-up" style="animation-delay: 0.8s;">
-                                    <a href="https://higher-education.us/" target="_blank" class="honorary-doctorate-btn-primary">
-                                        <span>Learn More</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12">
-                            <div class="honorary-doctorate-visual fade-in-right">
-                                <div class="honorary-doctorate-info-card">
-                                    <div class="honorary-doctorate-card-header">
-                                        <div class="honorary-doctorate-card-icon">
-                                            <i class="fas fa-crown"></i>
-                                        </div>
-                                        <h4 class="honorary-doctorate-card-title">Honorary Doctorate</h4>
-                                        <p class="honorary-doctorate-card-subtitle">Scholarly Recognition</p>
-                                    </div>
-                                    
-                                    <div class="honorary-doctorate-card-stats">
-                                        <div class="honorary-doctorate-stat">
-                                            <div class="honorary-doctorate-stat-number">100%</div>
-                                            <div class="honorary-doctorate-stat-label">Online</div>
-                                        </div>
-                                        <div class="honorary-doctorate-stat">
-                                            <div class="honorary-doctorate-stat-number">Honor</div>
-                                            <div class="honorary-doctorate-stat-label">Based</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="honorary-doctorate-card-highlights">
-                                        <div class="honorary-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Scholarly Excellence</span>
-                                        </div>
-                                        <div class="honorary-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Academic Recognition</span>
-                                        </div>
-                                        <div class="honorary-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Prestigious Award</span>
-                                        </div>
-                                        <div class="honorary-doctorate-highlight">
-                                            <i class="fas fa-check-circle"></i>
-                                            <span>Global Acknowledgment</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="honorary-doctorate-floating-badge">
-                                    <div class="honorary-doctorate-floating-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="honorary-doctorate-floating-text">
-                                        <span class="honorary-doctorate-floating-title">Prestigious</span>
-                                        <span class="honorary-doctorate-floating-subtitle">Honor</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========== honorary doctorate program section end =========== -->
-    
-    
-        <!-- =========== professional certificate program section start =========== -->
-        <!-- Professional Certificate Courses Section -->
-        <section class="professional-certificate-section tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0" id="professional-certificate" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url('https://www.mba-edu.uk/img/profas-certi.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; height: auto; width: 100%;">
-            <div class="professional-certificate-container">
-                <!-- <div class="professional-certificate-background">
-                    <img src="https://sjc.microlink.io/RfWwUt45gZ3rvqFtI2bmgki8ArHmgnvIW7ifmZrBe-VgRA3ENR4BWzhTOgyT2n-Mee9yhmuOgzkbMbIJrCgm4Q.jpeg" alt="Professional Certificate Courses" class="professional-certificate-bg-image">
-                    <div class="professional-certificate-overlay"></div>
-                </div> -->
-                
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-12">
-                            <div class="professional-certificate-content fade-in-left">
-                                <div class="professional-certificate-badge fade-in-up">
-                                    <div class="professional-certificate-badge-icon">
-                                        <i class="fas fa-certificate"></i>
-                                    </div>
-                                    <span class="professional-certificate-badge-text">Industry Expert Designed</span>
-                                </div>
-                                
-                                <div class="professional-certificate-header fade-in-up" style="animation-delay: 0.2s;">
-                                    <h1 class="professional-certificate-title">Professional Certificate</h1>
-                                    <h2 class="professional-certificate-subtitle">Courses</h2>
-                                    <div class="professional-certificate-title-accent"></div>
-                                </div>
-                                
-                                <div class="professional-certificate-description fade-in-up" style="animation-delay: 0.4s;">
-                                    <p class="professional-certificate-lead">
-                                        The courses has been designed to gain <strong>specialized knowledge and training</strong> in a specific field or industry. You will find comprehensive curriculum, designed by industry expert, can help you gain competitive edge in the job market.
-                                    </p>
-                                    
-                                    <p class="professional-certificate-secondary">
-                                        To update your professional standards, or explore a new career path, a certificate course can help you achieve your goals and advance your career. Not only that, you will also become member of <strong>global professional community</strong> where you connect and be aware of the global practices.
-                                    </p>
-                                </div>
-                                
-                                <div class="professional-certificate-highlights fade-in-up" style="animation-delay: 0.6s;">
-                                    <div class="professional-certificate-highlight-item">
-                                        <i class="fas fa-dollar-sign"></i>
-                                        <span>Affordable Fees</span>
-                                    </div>
-                                    <div class="professional-certificate-highlight-item">
-                                        <i class="fas fa-graduation-cap"></i>
-                                        <span>Partial Scholarship Available</span>
-                                    </div>
-                                    <div class="professional-certificate-highlight-item">
-                                        <i class="fas fa-credit-card"></i>
-                                        <span>Instalment Payment Option</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="professional-certificate-actions fade-in-up" style="animation-delay: 0.8s;">
-                                    <a href="#" class="professional-certificate-btn-primary">
-                                        <span>Learn More</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                    <a href="https://mba-edu.uk/application_form" target="_blank" class="professional-certificate-btn-secondary">
-                                        <span>Apply Now</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12">
-                            <div class="professional-certificate-visual fade-in-right">
-                                <div class="professional-certificate-info-card">
-                                    <div class="professional-certificate-card-header">
-                                        <div class="professional-certificate-card-icon">
+                                    <div class="masters-program-floating-badge">
+                                        <div class="masters-program-floating-icon">
                                             <i class="fas fa-award"></i>
                                         </div>
-                                        <h4 class="professional-certificate-card-title">Certificate Programs</h4>
-                                        <p class="professional-certificate-card-subtitle">Industry Recognition</p>
-                                    </div>
-                                    
-                                    <div class="professional-certificate-card-stats">
-                                        <div class="professional-certificate-stat">
-                                            <div class="professional-certificate-stat-number">6+</div>
-                                            <div class="professional-certificate-stat-label">Cert Bodies</div>
+                                        <div class="masters-program-floating-text">
+                                            <span class="masters-program-floating-title">Flexible</span>
+                                            <span class="masters-program-floating-subtitle">Learning</span>
                                         </div>
-                                        <div class="professional-certificate-stat">
-                                            <div class="professional-certificate-stat-number">Global</div>
-                                            <div class="professional-certificate-stat-label">Recognition</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="professional-certificate-institutions">
-                                        <h5 class="professional-certificate-institutions-title">Certification Bodies</h5>
-                                        <div class="professional-certificate-institutions-list">
-                                            <div class="professional-certificate-institution">
-                                                <i class="fas fa-check-circle"></i>
-                                                <span>ProfQual, UK</span>
-                                            </div>
-                                            <div class="professional-certificate-institution">
-                                                <i class="fas fa-check-circle"></i>
-                                                <span>Cambridge Academy of Professionals, UK</span>
-                                            </div>
-                                            <div class="professional-certificate-institution">
-                                                <i class="fas fa-check-circle"></i>
-                                                <span>Board of HR Certification, BHRC</span>
-                                            </div>
-                                            <div class="professional-certificate-institution">
-                                                <i class="fas fa-check-circle"></i>
-                                                <span>IPAC, Singapore</span>
-                                            </div>
-                                            <div class="professional-certificate-institution">
-                                                <i class="fas fa-check-circle"></i>
-                                                <span>International Project Management Academy, IPMA</span>
-                                            </div>
-                                            <div class="professional-certificate-institution">
-                                                <i class="fas fa-check-circle"></i>
-                                                <span>Academy of Business English and Communication</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="professional-certificate-floating-badge">
-                                    <div class="professional-certificate-floating-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <div class="professional-certificate-floating-text">
-                                        <span class="professional-certificate-floating-title">Career</span>
-                                        <span class="professional-certificate-floating-subtitle">Focused</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- =========== professional certificate program section end =========== -->
+            </section>
+            <!-- =========== master program section end =========== -->
+        </div>
+
+        <div class="tab-pane fade" id="dba" role="tabpanel">
+            <!-- =========== Dba program section start =========== -->
+            <!-- DBA Program Section -->
+            <section class="dba-program-section" id="dba">
+                <div class="dba-program-container">
+                    <div class="dba-program-background">
+                        <img src="https://www.mba-edu.uk/img/DBA.jpg" alt="DBA Program" class="dba-program-bg-image">
+                        <div class="dba-program-overlay"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="dba-program-content fade-in-left">
+                                    <div class="dba-program-badge fade-in-up">
+                                        <div class="dba-program-badge-icon">
+                                            <i class="fas fa-user-graduate"></i>
+                                        </div>
+                                        <span class="dba-program-badge-text">Research-Based Professional Degree</span>
+                                    </div>
+                                    
+                                    <div class="dba-program-header fade-in-up" style="animation-delay: 0.2s;">
+                                        <h1 class="dba-program-title">Doctorate in Business Administration</h1>
+                                        <h2 class="dba-program-subtitle">(DBA)</h2>
+                                        <div class="dba-program-title-accent"></div>
+                                    </div>
+                                    
+                                    <div class="dba-program-description fade-in-up" style="animation-delay: 0.4s;">
+                                        <p class="dba-program-lead">
+                                            DBA Fully Online is a program that allows you to earn a Doctor of Business Administration degree from the comfort of your home or office. Interact with your supervisor through online discussion. This <strong>Research based professional degree</strong> is designed for working professionals who want to advance their careers, enhance their skills, and contribute to the field of business administration.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="dba-program-features-section fade-in-up" style="animation-delay: 0.6s;">
+                                        <h3 class="dba-program-features-title">Program Features</h3>
+                                        <div class="dba-program-features-grid">
+                                            <div class="dba-program-feature-item">
+                                                <div class="dba-program-feature-icon">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <span class="dba-program-feature-text">Affordable Fees</span>
+                                            </div>
+                                            
+                                            <div class="dba-program-feature-item">
+                                                <div class="dba-program-feature-icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <span class="dba-program-feature-text">Partial Scholarship Available</span>
+                                            </div>
+                                            
+                                            <div class="dba-program-feature-item">
+                                                <div class="dba-program-feature-icon">
+                                                    <i class="fas fa-credit-card"></i>
+                                                </div>
+                                                <span class="dba-program-feature-text">Instalment Payment Option</span>
+                                            </div>
+                                            
+                                            <div class="dba-program-feature-item">
+                                                <div class="dba-program-feature-icon">
+                                                    <i class="fas fa-user-tie"></i>
+                                                </div>
+                                                <span class="dba-program-feature-text">Connect with the Supervisor</span>
+                                            </div>
+                                            
+                                            <div class="dba-program-feature-item">
+                                                <div class="dba-program-feature-icon">
+                                                    <i class="fas fa-award"></i>
+                                                </div>
+                                                <span class="dba-program-feature-text">Opportunity to Attend Convocation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="dba-program-actions fade-in-up" style="animation-delay: 0.8s;">
+                                        <a href="https://higher-education.us/" target="_blank" class="dba-program-btn-primary">
+                                            <span>Learn More</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-5 col-md-12">
+                                <div class="dba-program-visual fade-in-right">
+                                    <div class="dba-program-info-card">
+                                        <div class="dba-program-card-header">
+                                            <div class="dba-program-card-icon">
+                                                <i class="fas fa-microscope"></i>
+                                            </div>
+                                            <h4 class="dba-program-card-title">DBA Program</h4>
+                                            <p class="dba-program-card-subtitle">Research-Based Doctorate</p>
+                                        </div>
+                                        
+                                        <div class="dba-program-card-stats">
+                                            <div class="dba-program-stat">
+                                                <div class="dba-program-stat-number">100%</div>
+                                                <div class="dba-program-stat-label">Online</div>
+                                            </div>
+                                            <div class="dba-program-stat">
+                                                <div class="dba-program-stat-number">1:1</div>
+                                                <div class="dba-program-stat-label">Supervision</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="dba-program-card-highlights">
+                                            <div class="dba-program-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Research Focus</span>
+                                            </div>
+                                            <div class="dba-program-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Working Professionals</span>
+                                            </div>
+                                            <div class="dba-program-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Flexible Schedule</span>
+                                            </div>
+                                            <div class="dba-program-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Expert Supervision</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="dba-program-floating-badge">
+                                        <div class="dba-program-floating-icon">
+                                            <i class="fas fa-trophy"></i>
+                                        </div>
+                                        <div class="dba-program-floating-text">
+                                            <span class="dba-program-floating-title">Doctoral</span>
+                                            <span class="dba-program-floating-subtitle">Degree</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== Dba program section end =========== -->
+        </div>
+
+        <div class="tab-pane fade" id="practitioners-doctorate" role="tabpanel">
+            <!-- =========== Practioners doctorate program section start =========== -->
+            <!-- Practitioners Doctorate Program Section -->
+            <section class="practitioners-doctorate-section" id="practitioners-doctorate">
+                <div class="practitioners-doctorate-container">
+                    <div class="practitioners-doctorate-background">
+                        <img src="https://www.mba-edu.uk/img/Practitionar%20Doctorate.jpeg" alt="Practitioners Doctorate Program" class="practitioners-doctorate-bg-image">
+                        <div class="practitioners-doctorate-overlay"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="practitioners-doctorate-content fade-in-left">
+                                    <div class="practitioners-doctorate-badge fade-in-up">
+                                        <div class="practitioners-doctorate-badge-icon">
+                                            <i class="fas fa-flask"></i>
+                                        </div>
+                                        <span class="practitioners-doctorate-badge-text">Practice-Based Research</span>
+                                    </div>
+                                    
+                                    <div class="practitioners-doctorate-header fade-in-up" style="animation-delay: 0.2s;">
+                                        <h1 class="practitioners-doctorate-title">Practitioners Doctorate</h1>
+                                        <div class="practitioners-doctorate-title-accent"></div>
+                                    </div>
+                                    
+                                    <div class="practitioners-doctorate-description fade-in-up" style="animation-delay: 0.4s;">
+                                        <p class="practitioners-doctorate-lead">
+                                            Are you looking for a way to advance your career in the field of <strong>practice-based research</strong>? Do you want to earn a Practitioners Doctorate degree without compromising your work-life balance? If so, you might be interested in our fully online program that offers flexible and personalized learning opportunities.
+                                        </p>
+                                        
+                                        <p class="practitioners-doctorate-secondary">
+                                            Your prior contribution of extensive research on a specific scholarly work such as <strong>publication, article, books or a book chapter</strong> shall be presented as thesis to external examiner for defense.
+                                        </p>
+                                        
+                                        <p class="practitioners-doctorate-tertiary">
+                                            Whether you are a practitioner in <strong>education, health, social work</strong>, or any other discipline, the Practitioners Doctorate program can help you achieve your professional goals and make a positive impact on your field.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="practitioners-doctorate-features-section fade-in-up" style="animation-delay: 0.6s;">
+                                        <h3 class="practitioners-doctorate-features-title">Program Features</h3>
+                                        <div class="practitioners-doctorate-features-grid">
+                                            <div class="practitioners-doctorate-feature-item">
+                                                <div class="practitioners-doctorate-feature-icon">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <span class="practitioners-doctorate-feature-text">Affordable Fees</span>
+                                            </div>
+                                            
+                                            <div class="practitioners-doctorate-feature-item">
+                                                <div class="practitioners-doctorate-feature-icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <span class="practitioners-doctorate-feature-text">Partial Scholarship Available</span>
+                                            </div>
+                                            
+                                            <div class="practitioners-doctorate-feature-item">
+                                                <div class="practitioners-doctorate-feature-icon">
+                                                    <i class="fas fa-credit-card"></i>
+                                                </div>
+                                                <span class="practitioners-doctorate-feature-text">Instalment Payment Option</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="practitioners-doctorate-actions fade-in-up" style="animation-delay: 0.8s;">
+                                        <a href="https://higher-education.us/" target="_blank" class="practitioners-doctorate-btn-primary">
+                                            <span>Learn More</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-5 col-md-12">
+                                <div class="practitioners-doctorate-visual fade-in-right">
+                                    <div class="practitioners-doctorate-info-card">
+                                        <div class="practitioners-doctorate-card-header">
+                                            <div class="practitioners-doctorate-card-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <h4 class="practitioners-doctorate-card-title">Practitioners Doctorate</h4>
+                                            <p class="practitioners-doctorate-card-subtitle">Practice-Based Research</p>
+                                        </div>
+                                        
+                                        <div class="practitioners-doctorate-card-stats">
+                                            <div class="practitioners-doctorate-stat">
+                                                <div class="practitioners-doctorate-stat-number">100%</div>
+                                                <div class="practitioners-doctorate-stat-label">Online</div>
+                                            </div>
+                                            <div class="practitioners-doctorate-stat">
+                                                <div class="practitioners-doctorate-stat-number">Prior</div>
+                                                <div class="practitioners-doctorate-stat-label">Research</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="practitioners-doctorate-card-highlights">
+                                            <div class="practitioners-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Flexible Learning</span>
+                                            </div>
+                                            <div class="practitioners-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Work-Life Balance</span>
+                                            </div>
+                                            <div class="practitioners-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>External Defense</span>
+                                            </div>
+                                            <div class="practitioners-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Multi-Disciplinary</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="practitioners-doctorate-floating-badge">
+                                        <div class="practitioners-doctorate-floating-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="practitioners-doctorate-floating-text">
+                                            <span class="practitioners-doctorate-floating-title">Practice</span>
+                                            <span class="practitioners-doctorate-floating-subtitle">Based</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== Practioners doctorate program section end =========== -->
+        </div>
+
+        <div class="tab-pane fade" id="honorary-doctorate" role="tabpanel">
+            <!-- =========== honorary doctorate program section start =========== -->
+            <!-- Honorary Doctorate Program Section -->
+            <section class="honorary-doctorate-section" id="honorary-doctorate" style="background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('https://www.mba-edu.uk/img/honor-doct.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%; height: auto;">
+                <div class="honorary-doctorate-container">
+                    <!-- <div class="honorary-doctorate-background">
+                        <img src="https://www.mba-edu.uk/img/honor-doct.jpg" alt="Honorary Doctorate Program" class="honorary-doctorate-bg-image">
+                        <div class="honorary-doctorate-overlay"></div>
+                    </div> -->
+                    
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="honorary-doctorate-content fade-in-left">
+                                    <div class="honorary-doctorate-badge fade-in-up">
+                                        <div class="honorary-doctorate-badge-icon">
+                                            <i class="fas fa-medal"></i>
+                                        </div>
+                                        <span class="honorary-doctorate-badge-text">Recognition of Excellence</span>
+                                    </div>
+                                    
+                                    <div class="honorary-doctorate-header fade-in-up" style="animation-delay: 0.2s;">
+                                        <h1 class="honorary-doctorate-title">Honorary Doctorate</h1>
+                                        <h2 class="honorary-doctorate-subtitle">for Scholars</h2>
+                                        <div class="honorary-doctorate-title-accent"></div>
+                                    </div>
+                                    
+                                    <div class="honorary-doctorate-description fade-in-up" style="animation-delay: 0.4s;">
+                                        <p class="honorary-doctorate-lead">
+                                            Are you looking for a way to advance your career in the field of practice-based research? Do you want to earn a Practitioners Doctorate degree without compromising your work-life balance? If so, you might be interested in our fully online program that offers flexible and personalized learning opportunities.
+                                        </p>
+                                        
+                                        <p class="honorary-doctorate-secondary">
+                                            Your prior contribution of extensive research on a specific scholarly work such as <strong>publication, article, books or a book chapter</strong> shall be presented as thesis to external examiner for defense.
+                                        </p>
+                                        
+                                        <p class="honorary-doctorate-tertiary">
+                                            Whether you are a practitioner in <strong>education, health, social work</strong>, or any other discipline, the Practitioners Doctorate program can help you achieve your professional goals and make a positive impact on your field.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="honorary-doctorate-highlights fade-in-up" style="animation-delay: 0.6s;">
+                                        <div class="honorary-doctorate-highlight-item">
+                                            <i class="fas fa-dollar-sign"></i>
+                                            <span>Affordable Fees</span>
+                                        </div>
+                                        <div class="honorary-doctorate-highlight-item">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <span>Partial Scholarship Available</span>
+                                        </div>
+                                        <div class="honorary-doctorate-highlight-item">
+                                            <i class="fas fa-credit-card"></i>
+                                            <span>Instalment Payment Option</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="honorary-doctorate-actions fade-in-up" style="animation-delay: 0.8s;">
+                                        <a href="https://higher-education.us/" target="_blank" class="honorary-doctorate-btn-primary">
+                                            <span>Learn More</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-5 col-md-12">
+                                <div class="honorary-doctorate-visual fade-in-right">
+                                    <div class="honorary-doctorate-info-card">
+                                        <div class="honorary-doctorate-card-header">
+                                            <div class="honorary-doctorate-card-icon">
+                                                <i class="fas fa-crown"></i>
+                                            </div>
+                                            <h4 class="honorary-doctorate-card-title">Honorary Doctorate</h4>
+                                            <p class="honorary-doctorate-card-subtitle">Scholarly Recognition</p>
+                                        </div>
+                                        
+                                        <div class="honorary-doctorate-card-stats">
+                                            <div class="honorary-doctorate-stat">
+                                                <div class="honorary-doctorate-stat-number">100%</div>
+                                                <div class="honorary-doctorate-stat-label">Online</div>
+                                            </div>
+                                            <div class="honorary-doctorate-stat">
+                                                <div class="honorary-doctorate-stat-number">Honor</div>
+                                                <div class="honorary-doctorate-stat-label">Based</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="honorary-doctorate-card-highlights">
+                                            <div class="honorary-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Scholarly Excellence</span>
+                                            </div>
+                                            <div class="honorary-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Academic Recognition</span>
+                                            </div>
+                                            <div class="honorary-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Prestigious Award</span>
+                                            </div>
+                                            <div class="honorary-doctorate-highlight">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>Global Acknowledgment</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="honorary-doctorate-floating-badge">
+                                        <div class="honorary-doctorate-floating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="honorary-doctorate-floating-text">
+                                            <span class="honorary-doctorate-floating-title">Prestigious</span>
+                                            <span class="honorary-doctorate-floating-subtitle">Honor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== honorary doctorate program section end =========== -->
+        </div>
+
+        <div class="tab-pane fade" id="professional-certificate" role="tabpanel">
+            <!-- =========== professional certificate program section start =========== -->
+            <!-- Professional Certificate Courses Section -->
+            <section class="professional-certificate-section" id="professional-certificate" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url('https://www.mba-edu.uk/img/profas-certi.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; height: auto; width: 100%;">
+                <div class="professional-certificate-container">
+                    <!-- <div class="professional-certificate-background">
+                        <img src="https://sjc.microlink.io/RfWwUt45gZ3rvqFtI2bmgki8ArHmgnvIW7ifmZrBe-VgRA3ENR4BWzhTOgyT2n-Mee9yhmuOgzkbMbIJrCgm4Q.jpeg" alt="Professional Certificate Courses" class="professional-certificate-bg-image">
+                        <div class="professional-certificate-overlay"></div>
+                    </div> -->
+                    
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="professional-certificate-content fade-in-left">
+                                    <div class="professional-certificate-badge fade-in-up">
+                                        <div class="professional-certificate-badge-icon">
+                                            <i class="fas fa-certificate"></i>
+                                        </div>
+                                        <span class="professional-certificate-badge-text">Industry Expert Designed</span>
+                                    </div>
+                                    
+                                    <div class="professional-certificate-header fade-in-up" style="animation-delay: 0.2s;">
+                                        <h1 class="professional-certificate-title">Professional Certificate</h1>
+                                        <h2 class="professional-certificate-subtitle">Courses</h2>
+                                        <div class="professional-certificate-title-accent"></div>
+                                    </div>
+                                    
+                                    <div class="professional-certificate-description fade-in-up" style="animation-delay: 0.4s;">
+                                        <p class="professional-certificate-lead">
+                                            The courses has been designed to gain <strong>specialized knowledge and training</strong> in a specific field or industry. You will find comprehensive curriculum, designed by industry expert, can help you gain competitive edge in the job market.
+                                        </p>
+                                        
+                                        <p class="professional-certificate-secondary">
+                                            To update your professional standards, or explore a new career path, a certificate course can help you achieve your goals and advance your career. Not only that, you will also become member of <strong>global professional community</strong> where you connect and be aware of the global practices.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="professional-certificate-highlights fade-in-up" style="animation-delay: 0.6s;">
+                                        <div class="professional-certificate-highlight-item">
+                                            <i class="fas fa-dollar-sign"></i>
+                                            <span>Affordable Fees</span>
+                                        </div>
+                                        <div class="professional-certificate-highlight-item">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <span>Partial Scholarship Available</span>
+                                        </div>
+                                        <div class="professional-certificate-highlight-item">
+                                            <i class="fas fa-credit-card"></i>
+                                            <span>Instalment Payment Option</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="professional-certificate-actions fade-in-up" style="animation-delay: 0.8s;">
+                                        <a href="#" class="professional-certificate-btn-primary">
+                                            <span>Learn More</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a href="https://mba-edu.uk/application_form" target="_blank" class="professional-certificate-btn-secondary">
+                                            <span>Apply Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-5 col-md-12">
+                                <div class="professional-certificate-visual fade-in-right">
+                                    <div class="professional-certificate-info-card">
+                                        <div class="professional-certificate-card-header">
+                                            <div class="professional-certificate-card-icon">
+                                                <i class="fas fa-award"></i>
+                                            </div>
+                                            <h4 class="professional-certificate-card-title">Certificate Programs</h4>
+                                            <p class="professional-certificate-card-subtitle">Industry Recognition</p>
+                                        </div>
+                                        
+                                        <div class="professional-certificate-card-stats">
+                                            <div class="professional-certificate-stat">
+                                                <div class="professional-certificate-stat-number">6+</div>
+                                                <div class="professional-certificate-stat-label">Cert Bodies</div>
+                                            </div>
+                                            <div class="professional-certificate-stat">
+                                                <div class="professional-certificate-stat-number">Global</div>
+                                                <div class="professional-certificate-stat-label">Recognition</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="professional-certificate-institutions">
+                                            <h5 class="professional-certificate-institutions-title">Certification Bodies</h5>
+                                            <div class="professional-certificate-institutions-list">
+                                                <div class="professional-certificate-institution">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>ProfQual, UK</span>
+                                                </div>
+                                                <div class="professional-certificate-institution">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Cambridge Academy of Professionals, UK</span>
+                                                </div>
+                                                <div class="professional-certificate-institution">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Board of HR Certification, BHRC</span>
+                                                </div>
+                                                <div class="professional-certificate-institution">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>IPAC, Singapore</span>
+                                                </div>
+                                                <div class="professional-certificate-institution">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>International Project Management Academy, IPMA</span>
+                                                </div>
+                                                <div class="professional-certificate-institution">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Academy of Business English and Communication</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="professional-certificate-floating-badge">
+                                        <div class="professional-certificate-floating-icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <div class="professional-certificate-floating-text">
+                                            <span class="professional-certificate-floating-title">Career</span>
+                                            <span class="professional-certificate-floating-subtitle">Focused</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== professional certificate program section end =========== -->
+        </div>
+
     </div>
+    <!-- program showcase tab content end -->
 
 
-    
     
 
     <!-- bootstrap cdn -->

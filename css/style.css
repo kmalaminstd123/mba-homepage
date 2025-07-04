@@ -1569,7 +1569,7 @@ img {
 .program-showcase-section {
     position: relative;
     /* padding: 80px 0; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .program-showcase-container {
@@ -1936,8 +1936,8 @@ img {
 /* Master's Program Section - Unique Classes */
 .masters-program-section {
     position: relative;
-    padding: 80px 0;
-    overflow: hidden;
+    /* padding: 80px 0; */
+    /* overflow: hidden; */
 }
 
 .masters-program-container {
@@ -2298,8 +2298,8 @@ img {
 /* DBA Program Section - Unique Classes */
 .dba-program-section {
     position: relative;
-    padding: 80px 0;
-    overflow: hidden;
+    /* padding: 80px 0; */
+    /* overflow: hidden; */
 }
 
 .dba-program-container {
@@ -2700,8 +2700,8 @@ img {
 /* Practitioners Doctorate Program Section - Unique Classes */
 .practitioners-doctorate-section {
     position: relative;
-    padding: 80px 0;
-    overflow: hidden;
+    /* padding: 80px 0; */
+    /* overflow: hidden; */
 }
 
 .practitioners-doctorate-container {
@@ -3099,7 +3099,7 @@ img {
 .honorary-doctorate-section {
     position: relative;
     padding: 80px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .honorary-doctorate-container {
@@ -3482,7 +3482,7 @@ img {
 .professional-certificate-section {
     position: relative;
     padding: 80px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .professional-certificate-container {
@@ -3959,7 +3959,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.9);
+    /* background: var(--primary-color); */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -4090,7 +4090,7 @@ img {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--primary-color);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
@@ -4101,7 +4101,7 @@ img {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .program-tabs-dropdown.active .program-tabs-dropdown-menu {
