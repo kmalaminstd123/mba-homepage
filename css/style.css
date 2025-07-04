@@ -3894,7 +3894,7 @@ img {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 60px 0;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .program-tabs-section::before {
@@ -4086,10 +4086,11 @@ img {
 }
 
 .program-tabs-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    position: absolute !important;
+    top: -610% !important;
+    left: 0 !important;
+    right: auto !important;
+    /* bottom: 100% !important; */
     background: var(--primary-color);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
