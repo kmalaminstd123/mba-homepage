@@ -682,7 +682,18 @@ img {
     align-items: center;
     gap: 15px;
     min-width: 250px;
-    
+}
+
+.ban-floating-card.card-1{
+    animation: float 6s ease-in-out infinite;
+}
+
+.ban-floating-card.card-2{
+    animation: float 4s ease-in-out infinite;
+}
+
+.ban-floating-card.card-3{
+    animation: float 3s ease-in-out infinite;
 }
 
 .card-1 {
@@ -4051,96 +4062,174 @@ img {
 }
 
 /* Mobile Dropdown */
+/* Mobile Program Select Styles */
 .program-tabs-mobile {
-    display: none;
-}
-
-.program-tabs-dropdown {
-    position: relative;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-.program-tabs-dropdown-btn {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: var(--paragraph-font);
+.program-select-wrapper {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(39, 81, 96, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.program-select-wrapper:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    border-color: rgba(39, 81, 96, 0.2);
+}
+
+.program-select-wrapper:focus-within {
+    border-color: #275160;
+    box-shadow: 0 15px 50px rgba(39, 81, 96, 0.2);
+}
+
+.program-select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 18px 50px 18px 20px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--text-dark);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    color: #275160;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    line-height: 1.4;
 }
 
-.program-tabs-dropdown-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+.program-select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
-.program-tabs-dropdown-menu {
-    position: absolute !important;
-    top: -610% !important;
-    left: 0 !important;
-    right: auto !important;
-    /* bottom: 100% !important; */
-    background: var(--primary-color);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    margin-top: 8px;
-    padding: 8px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    z-index: 9999;
-}
-
-.program-tabs-dropdown.active .program-tabs-dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.program-tabs-dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--text-dark);
-    font-family: var(--paragraph-font);
+.program-select option {
+    background: white;
+    color: #333;
+    padding: 15px 20px;
     font-size: 0.95rem;
     font-weight: 500;
+    border: none;
+    line-height: 1.5;
+}
+
+.program-select option:hover,
+.program-select option:focus {
+    background: linear-gradient(135deg, #275160, #852343);
+    color: white;
+}
+
+.program-select option:checked {
+    background: linear-gradient(135deg, #275160, #852343);
+    color: white;
+    font-weight: 600;
+}
+
+.program-select-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #275160;
+    font-size: 1.1rem;
+    pointer-events: none;
+    z-index: 1;
     transition: all 0.3s ease;
 }
 
-.program-tabs-dropdown-item:hover {
-    background: rgba(39, 81, 96, 0.1);
-    color: var(--primary-color);
-    transform: translateX(5px);
+.program-select-wrapper:hover .program-select-icon {
+    color: #852343;
+    transform: translateY(-50%) scale(1.1);
 }
 
-.program-tabs-dropdown-item.active {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
+.program-select:focus + .program-select-icon {
+    color: #852343;
+    transform: translateY(-50%) rotate(180deg);
 }
 
-.program-tabs-dropdown-item i {
-    width: 20px;
-    text-align: center;
-    font-size: 0.9rem;
+/* Enhanced Mobile Select with Gradient Background */
+.program-select-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(39, 81, 96, 0.02) 0%, rgba(133, 35, 65, 0.02) 100%);
+    z-index: 0;
+    transition: all 0.3s ease;
 }
+
+.program-select-wrapper:hover::before {
+    background: linear-gradient(135deg, rgba(39, 81, 96, 0.05) 0%, rgba(133, 35, 65, 0.05) 100%);
+}
+
+/* Custom scrollbar for dropdown options */
+.program-select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.program-select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.program-select::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #275160, #852343);
+    border-radius: 4px;
+}
+
+.program-select::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1e3d47, #6b1c34);
+}
+
+/* Animation for select interaction */
+@keyframes selectPulse {
+    0% { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0 15px 50px rgba(39, 81, 96, 0.15); }
+    100% { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); }
+}
+
+.program-select-wrapper:active {
+    animation: selectPulse 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 575.98px) {
+    .program-tabs-mobile {
+        padding: 0 10px;
+    }
+    
+    .program-select {
+        font-size: 0.9rem !important;
+        padding: 16px 45px 16px 18px !important;
+    }
+    
+    .program-select-icon {
+        right: 15px;
+        font-size: 1rem;
+    }
+    
+    .program-select option {
+        font-size: 0.9rem;
+        padding: 12px 18px;
+    }
+}
+
 
 /* Animations */
 @keyframes program-tab-glow {

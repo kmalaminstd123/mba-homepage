@@ -7,7 +7,7 @@ function toggleMobileMenu() {
     navItems.classList.toggle('fade-in-up')
 
     if (navItems.classList.contains('show')) {
-        
+
         toggleBtn.classList.remove('fa-times');
         toggleBtn.classList.add('fa-bars');
 
@@ -15,7 +15,7 @@ function toggleMobileMenu() {
             navItems.classList.remove('fade-out-up');
         }, 600);
     } else {
-        
+
         toggleBtn.classList.remove('fa-bars');
         toggleBtn.classList.add('fa-times');
 
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    
+
 
 });
 
@@ -145,128 +145,11 @@ window.addEventListener('scroll', function () {
 });
 
 
+const select = document.getElementById('programDropdownSelect');
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Desktop tab buttons
-    const tabButtons = document.querySelectorAll('.program-tab-btn');
-    const dropdownBtn = document.querySelector('.program-tabs-dropdown-btn');
-    const dropdownMenu = document.querySelector('.program-tabs-dropdown-menu');
-    const dropdownItems = document.querySelectorAll('.program-tabs-dropdown-item');
-    const dropdown = document.querySelector('.program-tabs-dropdown');
-    
-    // Handle desktop tab clicks
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const target = this.getAttribute('data-target');
-            
-            // Remove active class from all buttons
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Smooth scroll to target section
-            const targetSection = document.querySelector(target);
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-            
-            // Update mobile dropdown text
-            const tabText = this.querySelector('.program-tab-text').textContent;
-            if (dropdownBtn) {
-                dropdownBtn.querySelector('.program-tabs-dropdown-text').textContent = tabText;
-            }
-        });
-    });
-    
-    // Handle mobile dropdown
-    if (dropdownBtn) {
-        dropdownBtn.addEventListener('click', function() {
-            dropdown.classList.toggle('active');
-        });
+select.addEventListener('change', function () {
+    const targetTab = document.querySelector(`button[data-bs-target="${this.value}"]`);
+    if (targetTab) {
+        new bootstrap.Tab(targetTab).show();
     }
-    
-    // Handle mobile dropdown items
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = this.getAttribute('href');
-            
-            // Remove active class from all dropdown items
-            dropdownItems.forEach(item => item.classList.remove('active'));
-            
-            // Add active class to clicked item
-            this.classList.add('active');
-            
-            // Update dropdown button text
-            const itemText = this.querySelector('span').textContent;
-            dropdownBtn.querySelector('.program-tabs-dropdown-text').textContent = itemText;
-            
-            // Close dropdown
-            dropdown.classList.remove('active');
-            
-            // Smooth scroll to target section
-            const targetSection = document.querySelector(target);
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-    
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (dropdown && !dropdown.contains(e.target)) {
-            dropdown.classList.remove('active');
-        }
-    });
-    
-    // Handle scroll-based active tab updates
-    const sections = document.querySelectorAll('section[id]');
-    const observerOptions = {
-        threshold: 0.3,
-        rootMargin: '-100px 0px -100px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const sectionId = '#' + entry.target.id;
-                
-                // Update desktop tabs
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('active');
-                    if (btn.getAttribute('data-target') === sectionId) {
-                        btn.classList.add('active');
-                        
-                        // Update mobile dropdown
-                        const tabText = btn.querySelector('.program-tab-text').textContent;
-                        if (dropdownBtn) {
-                            dropdownBtn.querySelector('.program-tabs-dropdown-text').textContent = tabText;
-                        }
-                    }
-                });
-                
-                // Update mobile dropdown items
-                dropdownItems.forEach(item => {
-                    item.classList.remove('active');
-                    if (item.getAttribute('href') === sectionId) {
-                        item.classList.add('active');
-                    }
-                });
-            }
-        });
-    }, observerOptions);
-    
-    // Observe all program sections
-    sections.forEach(section => {
-        if (['mba', 'master', 'dba', 'practitioners-doctorate', 'honorary-doctorate', 'professional-certificate'].includes(section.id)) {
-            observer.observe(section);
-        }
-    });
 });

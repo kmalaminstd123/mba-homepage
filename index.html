@@ -715,67 +715,19 @@
                     
                     
                    <!-- Mobile Dropdown for smaller screens -->
-                    <div class="program-tabs-mobile d-md-none">
-                        <div class="dropdown program-tabs-dropdown">
-                            <button class="btn dropdown-toggle program-tabs-dropdown-btn" type="button" id="programDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="program-tabs-dropdown-text">MBA</span>
-                            </button>
-                            <ul class="dropdown-menu program-tabs-dropdown-menu" aria-labelledby="programDropdown">
-                                <li>
-                                    <a class="dropdown-item program-tabs-dropdown-item active" 
-                                    href="#" 
-                                    data-bs-toggle="pill" 
-                                    data-bs-target="#mba">
-                                        <i class="fas fa-briefcase"></i>
-                                        <span>MBA</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item program-tabs-dropdown-item" 
-                                    href="#" 
-                                    data-bs-toggle="pill" 
-                                    data-bs-target="#master">
-                                        <i class="fas fa-graduation-cap"></i>
-                                        <span>Masters</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item program-tabs-dropdown-item" 
-                                    href="#" 
-                                    data-bs-toggle="pill" 
-                                    data-bs-target="#dba">
-                                        <i class="fas fa-microscope"></i>
-                                        <span>DBA</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item program-tabs-dropdown-item" 
-                                    href="#" 
-                                    data-bs-toggle="pill" 
-                                    data-bs-target="#practitioners-doctorate">
-                                        <i class="fas fa-flask"></i>
-                                        <span>Practitioners Doctorate</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item program-tabs-dropdown-item" 
-                                    href="#" 
-                                    data-bs-toggle="pill" 
-                                    data-bs-target="#honorary-doctorate">
-                                        <i class="fas fa-medal"></i>
-                                        <span>Honorary Doctorate</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item program-tabs-dropdown-item" 
-                                    href="#" 
-                                    data-bs-toggle="pill" 
-                                    data-bs-target="#professional-certificate">
-                                        <i class="fas fa-certificate"></i>
-                                        <span>Professional Certificate</span>
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="program-tabs-mobile d-md-none mt-3">
+                        <div class="program-select-wrapper">
+                            <select class="form-select program-select" id="programDropdownSelect">
+                                <option value="#mba" selected>📋 MBA - Master of Business Administration</option>
+                                <option value="#master">🎓 Masters - Advanced Degree Programs</option>
+                                <option value="#dba">🔬 DBA - Doctorate in Business Administration</option>
+                                <option value="#practitioners-doctorate">🧪 Practitioners Doctorate - Practice-Based Research</option>
+                                <option value="#honorary-doctorate">🏅 Honorary Doctorate - Recognition of Excellence</option>
+                                <option value="#professional-certificate">📜 Professional Certificate - Industry Expert Designed</option>
+                            </select>
+                            <div class="program-select-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
                         </div>
                     </div>  
 
