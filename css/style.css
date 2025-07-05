@@ -4555,8 +4555,8 @@ body{
 }
 
 .enhanced-course-card .social-link {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -4564,10 +4564,12 @@ body{
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 25px;
+    /* background-color: #000; */
+    color: #495057;
 }
 
-.enhanced-course-card .social-link.facebook {
+/* .enhanced-course-card .social-link.facebook {
     background: #1877f2;
 }
 
@@ -4581,11 +4583,11 @@ body{
 
 .enhanced-course-card .social-link.messenger {
     background: #00b2ff;
-}
+} */
 
 .enhanced-course-card .social-link:hover {
     transform: translateY(-3px) scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
 }
 
 /* Responsive Design */
