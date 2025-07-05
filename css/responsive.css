@@ -1,4 +1,4 @@
-/* Responsive Design */
+
 @media (max-width: 1199.98px) {
     .nav-items {
         gap: 15px;
@@ -63,7 +63,7 @@
     }
 
     .hero-features {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 15px;
     }
 
@@ -164,8 +164,8 @@
     }
     
     .program-showcase-actions {
-        flex-direction: column;
-        align-items: flex-start;
+        /* flex-direction: column; */
+        align-items: center;
         gap: 12px;
     }
     
@@ -206,6 +206,10 @@
         width: 100%;
         justify-content: center;
         max-width: 280px;
+    }
+
+    .tab_1_cont, .tab_2_cont, .tab_3_cont, .tab_4_cont, .tab_5_cont, .tab_6_cont{
+        flex-wrap: wrap-reverse;
     }
     
     .masters-program-visual {
@@ -315,9 +319,49 @@
         margin-top: 40px;
         min-height: auto;
     }
+
+    .scholarship-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .achievement-stats {
+        justify-content: center;
+    }
+    
+    .bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        text-align: center;
+    }
+    
+    .legal-links {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767.98px) {
+    .hero-badge{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-title{
+        text-align: center;
+    }
+
+    .hero-description{
+        text-align: center;
+    }
+
+    .hero-features{
+        justify-content: center;
+    }
+
     .top-bar {
         font-size: 12px;
         padding: 8px 0;
@@ -611,6 +655,78 @@
         padding: 25px;
         max-width: 100%;
     }
+
+    .scholarship-highlight {
+        padding: 40px 0;
+    }
+    
+    .scholarship-title {
+        font-size: 1.8rem;
+    }
+    
+    .footer-content {
+        padding: 60px 0 30px;
+    }
+    
+    .achievement-stats {
+        gap: 15px;
+    }
+    
+    .social-media {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .legal-links {
+        gap: 15px;
+    }
+    
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .about-content .section-badge{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-content .about-title{
+        text-align: center;
+    }
+
+    .about-content .about-description{
+        text-align: center;
+    }
+
+    .brand-logo{
+        justify-content: center;
+    }
+
+    .footer-brand .brand-description{
+        text-align: center;
+    }
+
+    .footer-section .section-title{
+        text-align: center;
+    }
+
+    .footer-section .section-title::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-section .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section .contact-item{
+        justify-content: center;
+    }
     
 }
 
@@ -734,5 +850,42 @@
     
     .professional-certificate-institution {
         font-size: 0.75rem;
+    }
+
+    .program-tabs-mobile {
+        padding: 0 10px;
+    }
+    
+    .program-select {
+        font-size: 0.9rem !important;
+        padding: 16px 45px 16px 18px !important;
+    }
+    
+    .program-select-icon {
+        right: 15px;
+        font-size: 1rem;
+    }
+    
+    .program-select option {
+        font-size: 0.9rem;
+        padding: 12px 18px;
+    }
+
+    .scholarship-title {
+        font-size: 1.5rem;
+    }
+    
+    .scholarship-text {
+        font-size: 1rem;
+    }
+    
+    .achievement-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .legal-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
