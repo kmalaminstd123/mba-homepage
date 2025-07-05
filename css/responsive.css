@@ -7,6 +7,15 @@
     .search-container {
         min-width: 220px;
     }
+
+    .program-tab-btn {
+        min-width: 100px;
+        padding: 14px 16px;
+    }
+    
+    .program-tab-text {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -342,6 +351,26 @@
     .legal-links {
         justify-content: center;
     }
+
+    .program-tabs-nav {
+        gap: 6px;
+        padding: 10px;
+    }
+    
+    .program-tab-btn {
+        min-width: 90px;
+        padding: 12px 14px;
+    }
+    
+    .program-tab-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+    
+    .program-tab-text {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -529,7 +558,25 @@
         padding: 25px;
     }
     
+    .program-tabs-section {
+        padding: 40px 0;
+    }
     
+    .program-tabs-title, .popular_course_header h2 {
+        font-size: 2rem;
+    }
+    
+    .program-tabs-subtitle {
+        font-size: 1rem;
+    }
+    
+    .program-tabs-nav {
+        display: none;
+    }
+    
+    .program-tabs-mobile {
+        display: block;
+    }
 
     .dba-program-section {
         padding: 60px 0;
@@ -887,5 +934,13 @@
     .legal-links {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .program-tabs-title, .popular_course_header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .program-tabs-header {
+        margin-bottom: 30px;
     }
 }

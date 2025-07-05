@@ -127,6 +127,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+    // most popular course swiper
+    const mostPopularCourseSwiper = new Swiper('.popular_course_slider', {
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768:{
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+    });
+
+
+
 });
 
 // Add scroll animations
@@ -153,3 +185,5 @@ select.addEventListener('change', function () {
         new bootstrap.Tab(targetTab).show();
     }
 });
+
+
