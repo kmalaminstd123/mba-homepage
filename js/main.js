@@ -187,3 +187,115 @@ select.addEventListener('change', function () {
 });
 
 
+
+// Global Offices JavaScript - Unique Functions
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle office action button clicks
+    const officeActionButtons = document.querySelectorAll('.office-action-btn');
+    officeActionButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const buttonText = this.textContent.trim();
+            
+            // Add click animation
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(-2px)';
+            }, 150);
+            
+            if (buttonText.includes('Map')) {
+                console.log('Opening map view for office...');
+                // Add map functionality here
+            } else if (buttonText.includes('Contact')) {
+                console.log('Opening contact form for office...');
+                // Add contact functionality here
+            }
+        });
+    });
+    
+    // Animate global stats on scroll
+    const globalStatsObserverOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const globalStatsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const statNumbers = entry.target.querySelectorAll('.stat-number-display');
+                statNumbers.forEach(stat => {
+                    animateGlobalStatNumber(stat);
+                });
+            }
+        });
+    }, globalStatsObserverOptions);
+    
+    const globalStatsSection = document.querySelector('.global-presence-stats');
+    if (globalStatsSection) {
+        globalStatsObserver.observe(globalStatsSection);
+    }
+    
+    // Animate global stat numbers
+    function animateGlobalStatNumber(element) {
+        const target = element.textContent;
+        
+        // Handle different number formats
+        if (target.includes('/')) {
+            // For "24/7" format
+            return;
+        }
+        
+        const number = parseInt(target.replace(/\D/g, ''));
+        const suffix = target.replace(/\d/g, '');
+        
+        if (isNaN(number)) return;
+        
+        let current = 0;
+        const increment = number / 50;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= number) {
+                element.textContent = number + suffix;
+                clearInterval(timer);
+            } else {
+                element.textContent = Math.floor(current) + suffix;
+            }
+        }, 30);
+    }
+    
+    // Office location card hover effects
+    const officeLocationCards = document.querySelectorAll('.office-location-card');
+    officeLocationCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+    
+    // Contact links tracking
+    const officeContactLinks = document.querySelectorAll('.contact-link');
+    officeContactLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const type = this.href.includes('mailto:') ? 'Email' : 'Phone';
+            console.log(`Office ${type} contact clicked: ${this.textContent}`);
+        });
+    });
+    
+    // Staggered animation for office location cards
+    const officeCards = document.querySelectorAll('.office-location-card');
+    officeCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        
+        setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 100 + (index * 100));
+    });
+});
