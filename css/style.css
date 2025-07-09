@@ -4872,9 +4872,9 @@ body{
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.headquarters-card {
+/* .headquarters-card {
     border: 2px solid rgba(39, 81, 96, 0.15);
-}
+} */
 
  
 
@@ -5250,57 +5250,6 @@ body{
 
 .contact-office-btn:hover {
     background: linear-gradient(135deg, #1e3d47, #6b1c34);
-}
-
-/* Responsive Design */
-@media (max-width: 767.98px) {
-    .compact-offices-section {
-        padding: 30px 0;
-    }
-    
-    .compact-offices-title {
-        font-size: 1.5rem;
-    }
-    
-    .support-centers-list {
-        gap: 15px;
-    }
-    
-    .compact-stats-row {
-        gap: 25px;
-    }
-    
-    .modal-dialog {
-        margin: 10px;
-    }
-    
-    .office-modal-body .row {
-        flex-direction: column;
-    }
-    
-    .office-map-container {
-        height: 150px;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .compact-office-card {
-        padding: 15px;
-    }
-    
-    .support-centers-wrapper {
-        padding: 15px;
-    }
-    
-    .support-centers-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .modal-actions {
-        flex-direction: column;
-    }
 }
 
 /* Main Footer Content */
