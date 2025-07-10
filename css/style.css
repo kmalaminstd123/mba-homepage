@@ -335,6 +335,11 @@ body{
     color: var(--primary-color);
     transition: all 0.3s ease;
     height: 30px;
+    width: auto;
+}
+
+.logo-2{
+    height: 40px;
 }
 
 .logo img {
@@ -887,7 +892,7 @@ body{
 
 /* Programs Section Styles */
 .programs-section {
-    padding: 100px 0;
+    padding: 100px 0 60px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     position: relative;
 }
