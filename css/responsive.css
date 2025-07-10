@@ -388,6 +388,7 @@
     }
 
     .hero-features{
+        flex-direction: column;
         justify-content: center;
     }
 
