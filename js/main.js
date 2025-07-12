@@ -298,4 +298,13 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'translateY(0)';
         }, 100 + (index * 100));
     });
+
+    const heroNavslider = new Swiper('.hero-ban-swiper', {
+        autoplay: {
+        delay: 4000,
+        },
+        loop: true,
+        slidesPerView: 1,
+        direction: 'vertical'
+    });
 });
