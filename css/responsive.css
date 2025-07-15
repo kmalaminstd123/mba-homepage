@@ -371,6 +371,58 @@
     .program-tab-text {
         font-size: 0.8rem;
     }
+
+    .course-hero-title {
+        font-size: 2rem;
+    }
+
+    .course-hero-features {
+        gap: 15px;
+    }
+
+    .hero-feature-item {
+        font-size: 0.8rem;
+    }
+
+    .course-hero-actions {
+        gap: 10px;
+    }
+
+    .course-apply-btn,
+    .course-info-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .course-section-title {
+        font-size: 1.5rem;
+    }
+
+    .objectives-grid,
+    .accreditation-features,
+    .process-steps,
+    .documents-grid,
+    .admin-overview-grid,
+    .study-info-cards,
+    .assessment-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .rating-summary {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feedback-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .view-all-reviews-btn,
+    .write-review-btn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -804,6 +856,115 @@
         height: 150px;
         margin-top: 20px;
     }
+
+    .course-hero-section {
+        padding: 60px 0;
+    }
+
+    .course-hero-title {
+        font-size: 1.7rem;
+    }
+
+    .course-hero-acronym {
+        font-size: 0.8rem;
+    }
+
+    .course-hero-validation {
+        font-size: 0.8rem;
+    }
+
+    .course-hero-features {
+        margin-bottom: 20px;
+    }
+
+    .hero-feature-item {
+        font-size: 0.75rem;
+    }
+
+    .course-apply-btn,
+    .course-info-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .course-section {
+        padding: 30px;
+    }
+
+    .course-section-title {
+        font-size: 1.3rem;
+    }
+
+    .course-intro-text {
+        font-size: 1rem;
+    }
+
+    .highlight-item h6 {
+        font-size: 1rem;
+    }
+
+    .objective-content h6 {
+        font-size: 1rem;
+    }
+
+    .requirement-item h6 {
+        font-size: 1rem;
+    }
+
+    .module-info h6 {
+        font-size: 1rem;
+    }
+
+    .university-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .accreditation-feature h6 {
+        font-size: 1rem;
+    }
+
+    .step-content h6 {
+        font-size: 1rem;
+    }
+
+    .document-info h6 {
+        font-size: 1rem;
+    }
+
+    .sidebar-card .card-header h5 {
+        font-size: 1rem;
+    }
+
+    .info-value {
+        font-size: 0.85rem;
+    }
+
+    .related-course-item h6 {
+        font-size: 0.9rem;
+    }
+
+    .application-form .form-label,
+    .info-request-form .form-label {
+        font-size: 0.8rem;
+    }
+
+    .application-form .form-control,
+    .application-form .form-select,
+    .info-request-form .form-control,
+    .info-request-form .form-select {
+        font-size: 0.8rem;
+    }
+
+    .application-form .form-check-label,
+    .info-request-form .form-check-label {
+        font-size: 0.8rem;
+    }
+
+    .submit-application-btn,
+    .submit-info-request-btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
     
 }
 
@@ -989,5 +1150,114 @@
     
     .modal-actions {
         flex-direction: column;
+    }
+
+    .course-hero-section {
+        padding: 40px 0;
+    }
+
+    .course-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .course-hero-acronym {
+        font-size: 0.75rem;
+    }
+
+    .course-hero-validation {
+        font-size: 0.75rem;
+    }
+
+    .course-hero-features {
+        margin-bottom: 15px;
+    }
+
+    .hero-feature-item {
+        font-size: 0.7rem;
+    }
+
+    .course-apply-btn,
+    .course-info-btn {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .course-section {
+        padding: 20px;
+    }
+
+    .course-section-title {
+        font-size: 1.2rem;
+    }
+
+    .course-intro-text {
+        font-size: 0.9rem;
+    }
+
+    .highlight-item h6 {
+        font-size: 0.9rem;
+    }
+
+    .objective-content h6 {
+        font-size: 0.9rem;
+    }
+
+    .requirement-item h6 {
+        font-size: 0.9rem;
+    }
+
+    .module-info h6 {
+        font-size: 0.9rem;
+    }
+
+    .university-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .accreditation-feature h6 {
+        font-size: 0.9rem;
+    }
+
+    .step-content h6 {
+        font-size: 0.9rem;
+    }
+
+    .document-info h6 {
+        font-size: 0.9rem;
+    }
+
+    .sidebar-card .card-header h5 {
+        font-size: 0.9rem;
+    }
+
+    .info-value {
+        font-size: 0.8rem;
+    }
+
+    .related-course-item h6 {
+        font-size: 0.8rem;
+    }
+
+    .application-form .form-label,
+    .info-request-form .form-label {
+        font-size: 0.7rem;
+    }
+
+    .application-form .form-control,
+    .application-form .form-select,
+    .info-request-form .form-control,
+    .info-request-form .form-select {
+        font-size: 0.7rem;
+    }
+
+    .application-form .form-check-label,
+    .info-request-form .form-check-label {
+        font-size: 0.7rem;
+    }
+
+    .submit-application-btn,
+    .submit-info-request-btn {
+        padding: 8px 16px;
+        font-size: 0.7rem;
     }
 }

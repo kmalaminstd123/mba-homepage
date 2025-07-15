@@ -25,6 +25,8 @@ function toggleMobileMenu() {
     }
 }
 
+
+
 // Search functionality
 document.addEventListener('DOMContentLoaded', function () {
     // const searchInput = document.querySelector('.search-input');
@@ -179,7 +181,7 @@ window.addEventListener('scroll', function () {
 
 const select = document.getElementById('programDropdownSelect');
 
-select.addEventListener('change', function () {
+select && select.addEventListener('change', function () {
     const targetTab = document.querySelector(`button[data-bs-target="${this.value}"]`);
     if (targetTab) {
         new bootstrap.Tab(targetTab).show();
@@ -305,6 +307,6 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         loop: true,
         slidesPerView: 1,
-        direction: 'vertical'
+        direction: 'horizontal'
     });
 });
