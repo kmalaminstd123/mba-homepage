@@ -965,6 +965,20 @@
         padding: 10px 20px;
         font-size: 0.8rem;
     }
+
+    .admin-subsection{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .overview-item{
+        padding: 10px 5px;
+    }
+
+    .accreditation-main, .document-item{
+        flex-direction: column;
+    }
     
 }
 

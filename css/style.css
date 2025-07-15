@@ -1295,6 +1295,9 @@ body{
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transform: translateX(10px);
+}
+
+.highlight-item:hover .highlight-text{
     color: var(--primary-color);
 }
 
@@ -4637,7 +4640,7 @@ body{
 
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
+    50% { transform: translateY(-20px); }
 }
 
 .course-hero-content {
@@ -5967,7 +5970,7 @@ body{
 }
 
 .overview-icon {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondery-color));
     color: white;
     width: 50px;
     height: 50px;
