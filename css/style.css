@@ -352,11 +352,29 @@ body{
     height: 40px;
 }
 
+.logo-1.logo_resize_1{
+    height: 20px;
+    transition: all 0.4s linear;
+}
+
+.logo-2.logo_resize_2{
+    height: 20px;
+    transition: all 0.4s linear;
+}
+
+
+
 .logo img {
     height: 100%;
     width: auto !important;
 }
 
+.res-show.hide{
+    display: none !important;
+    transition: all 0.4s linear;
+    opacity: 0; 
+    visibility: hidden;
+}
 
 
 /* Navigation Items */
@@ -4798,7 +4816,7 @@ body{
     border-bottom: 1px solid var(--secondery-color);
     padding: 15px 0;
     z-index: 9999;
-    top: 138px;
+    top: 91px;
     /* box-shadow: 0 0px 10px 0 var(--primary-color); */
 }
 
@@ -5775,11 +5793,7 @@ body{
     width: 20px;
 }
 
-.info-item div {
-    /* display: flex;
-    flex-direction: column;
-    gap: 2px; */
-}
+
 
 .info-label {
     font-size: 0.8rem;
@@ -6044,10 +6058,7 @@ body{
 }
 
 /* Assessment Information */
-.assessment-cards {
-    /* display: flex;
-    gap: 25px; */
-}
+
 
 .assessment-card {
     display: flex;

@@ -169,10 +169,15 @@ window.addEventListener('scroll', function () {
     const topBar = document.querySelector('.top-bar');
     const mainNav = document.querySelector('.main-nav');
 
+    topBar.style.transition = 'all 0.4s linear';
+
     if (scrolled > 100) {
+        topBar.style.transition = 'all 0.4s linear';
         topBar.style.transform = 'translateY(-100%)';
+        
         mainNav.style.top = '0';
     } else {
+        topBar.style.transition = 'all 0.4s linear';
         topBar.style.transform = 'translateY(0)';
         mainNav.style.top = '54px';
     }

@@ -1369,9 +1369,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-
-                    
+                    </section>                   
 
                 </div>
 
@@ -2515,6 +2513,27 @@
 
 
     <script src="./js/main.js"></script>
+    <script>
+        const navLogo = document.querySelector('.res-show')
+
+        const logo1  = document.querySelector('.logo-1')
+        const logo2  = document.querySelector('.logo-2')
+
+        const navContainer = document.querySelector('.nav-container')
+
+        window.addEventListener('scroll', ()=>{
+            if(window.scrollY >= 1000){
+                logo1.classList.add('logo_resize_1')
+                logo2.classList.add('logo_resize_2')
+                navContainer.style.gap = "5px";
+            }else{
+                logo1.classList.remove('logo_resize_1')
+                logo2.classList.remove('logo_resize_2')
+                navContainer.style.gap = "20px";
+            }
+        })
+
+    </script>
 
 </body>
 
