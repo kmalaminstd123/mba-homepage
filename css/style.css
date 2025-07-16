@@ -5018,6 +5018,12 @@ body{
     border-radius: 0 0 8px 8px;
 }
 
+.eligibility-content ul li{
+    list-style-type: decimal-leading-zero;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
 .requirement-list {
     display: flex;
     flex-direction: column;
@@ -5436,6 +5442,17 @@ body{
     background: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
+}
+
+.trust_badge{
+    font-size: 20px;
+}
+
+.trust_badge img{
+    height: 30px;
+    width: auto;
+    background-color: var(--primary-color);
+    padding: 4px;
 }
 
 /* FAQ Section */
@@ -6071,6 +6088,19 @@ body{
     border-radius: 10px;
     padding: 25px;
     transition: all 0.3s ease;
+}
+
+.kn_more_btn{
+    background: linear-gradient(135deg, var(--primary-color), var(--secondery-color));
+    color: #fff;
+    border-radius: 20px;
+    transition: all 0.4s linear;
+}
+
+.kn_more_btn:hover{
+    color: #fff;
+    background: linear-gradient(135deg, var(--secondery-color), var(--primary-color));
+    transition: all 0.4s linear;
 }
 
 .assessment-card:hover {
