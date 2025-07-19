@@ -269,13 +269,11 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 6px 12px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .social-login:hover {
@@ -288,8 +286,7 @@ body{
     color: #1877f2;
 }
 
-.register-btn {
-    background-color: var(--secondery-color);
+.register-btn, .top-nav-log-btn {
     color: white;
     border: none;
     padding: 8px 20px;
@@ -298,7 +295,19 @@ body{
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 13px;
+    font-size: 16px;
+    position: relative;
+}
+
+.top-nav-log-btn::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 2px;
+    background-color: #fff;
 }
 
 .register-btn:hover {
@@ -825,23 +834,7 @@ body{
 /* academic program css start */
 
 /* Programs Section Styles */
-.programs-section {
-    padding: 100px 0 60px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-    position: relative;
-}
-
-.programs-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-}
-
-.programs-section .section-badge {
+.section-header .section-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -859,33 +852,51 @@ body{
     font-family: var(--heading-font);
     font-size: 2.8rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: white;
     margin-bottom: 15px;
     animation-delay: 0.4s;
 }
 
 .section-header p {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: white;
     max-width: 700px;
     margin: 0 auto 60px;
     animation-delay: 0.6s;
 }
 
-/* Program Card Styles */
+#programmes-section{
+    position: relative;
+    min-height: 50dvh;
+    padding: 200px 0;
+}
+
 .program-card {
     background: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    /* box-shadow: 0 10px 40px rgba(0,0,0,0.08); */
     transition: all 0.4s ease;
     height: 100%;
     border: 2px solid transparent;
     position: relative;
+    border-color: var(--primary-color);
+}
+
+.all-program-cards-wrapper{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1100px;
+    width: 98%;
 }
 
 .program-card:hover {
-    transform: translateY(-15px);
+    /* transform: translateY(-15px); */
     box-shadow: 0 25px 60px rgba(0,0,0,0.15);
     border-color: var(--primary-color);
 }
@@ -969,7 +980,7 @@ body{
 }
 
 .program-content {
-    padding: 0 30px 30px;
+    padding: 20px 30px;
 }
 
 .program-content h3 {
@@ -998,7 +1009,10 @@ body{
 }
 
 .program-features {
-    margin-bottom: 25px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feature-item {
@@ -1018,8 +1032,8 @@ body{
 .program-stats {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
-    padding: 20px 0;
+    margin-bottom: 8px;
+    padding: 15px 0;
     border-top: 1px solid #e9ecef;
     border-bottom: 1px solid #e9ecef;
 }
@@ -1051,7 +1065,7 @@ body{
 
 .btn-program-primary, .btn-program-secondary {
     flex: 1;
-    padding: 12px 20px;
+    padding: 7px 10px;
     border-radius: 25px;
     font-family: var(--paragraph-font);
     font-weight: 500;
@@ -1219,10 +1233,125 @@ body{
 
 /* About Us Section Styles */
 .about-us-section {
-    padding: 100px 0;
+    margin-top: 20%;
+    padding: 100px 0 50px 0;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     position: relative;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 1022px){
+    .about-us-section{
+        margin-top: 25%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .about-us-section{
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .about-us-section{
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-us-section{
+        margin-top: 170%;
+    }
+}
+
+@media only screen and (max-width: 692px){
+    .about-us-section{
+        margin-top: 180%;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .about-us-section{
+        margin-top: 190%;
+    }
+}
+
+@media only screen and (max-width: 622px){
+    .about-us-section{
+        margin-top: 200%;
+    }
+}
+
+@media only screen and (max-width: 590px){
+    .about-us-section{
+        margin-top: 220%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .about-us-section{
+        margin-top: 230%;
+    }
+}
+
+@media only screen and (max-width: 525px){
+    .about-us-section{
+        margin-top: 240%;
+    }
+}
+
+@media only screen and (max-width: 505px){
+    .about-us-section{
+        margin-top: 250%;
+    }
+}
+
+@media only screen and (max-width: 485px){
+    .about-us-section{
+        margin-top: 260%;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    .about-us-section{
+        margin-top: 280%;
+    }
+}
+
+@media only screen and (max-width: 435px){
+    .about-us-section{
+        margin-top: 300%;
+    }
+}
+
+@media only screen and (max-width: 413px){
+    .about-us-section{
+        margin-top: 320%;
+    }
+}
+
+@media only screen and (max-width: 387px){
+    .about-us-section{
+        margin-top: 340%;
+    }
+}
+
+@media only screen and (max-width: 369px){
+    .about-us-section{
+        margin-top: 360%;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .about-us-section{
+        margin-top: 380%;
+    }
+}
+
+@media only screen and (max-width: 345px){
+    .about-us-section{
+        margin-top: 400%;
+    }
 }
 
 .about-us-section::before {
@@ -4227,6 +4356,11 @@ body{
     overflow: hidden;
     transition: all 0.4s ease;
     position: relative;
+    border: 1px solid var(--primary-color);
+}
+
+.enhanced-course-card::-webkit-scrollbar{
+    display: none;
 }
 
 .popular_course_slider{
@@ -6305,6 +6439,254 @@ body{
 
 /* ========================== course details page css end ========================== */
 
+/* ========================== about us page start ========================== */
+
+.about-floating-shape{
+    animation: float 8s ease-in-out infinite;
+}
+
+.about_broch_separator{
+    padding: 50px 0;
+}
+
+.about_broch_separator p{
+    font-size: 22px;
+}
+
+.broch-download-btn {
+    position: relative;
+    padding: 15px 45px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondery-color));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px rgba(106, 142, 251, 0.2); */
+    transition: all 0.3s ease;
+}
+
+
+
+.broch-download-btn:hover {
+    transform: translateY(-2px);
+    /* box-shadow: 0 15px 30px rgba(106, 142, 251, 0.3); */
+}
+
+.broch-download-btn .button-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.broch-download-btn .download-icon {
+    font-size: 18px;
+}
+
+
+.button-exmp-3{
+    position: relative;
+    overflow: visible;
+    border-radius: 5px;
+}
+
+.button-exmp-3 .download-icon{
+    position: absolute;
+    top: -21px;
+    left: 30px;
+    height: 65px;
+    width: auto;
+}
+
+.button-exmp-3 .download-icon img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-exmp-3 .button-text{
+    padding-left: 60px;
+}
+
+.about_mission_vission{
+    margin: 80px 0;
+}
+
+.mission_vission_box{
+    background-color: #f8f8fa;
+    padding: 40px;
+    position: relative;
+}
+
+.mission_vission_box h3{
+    font-weight: 600;
+}
+
+.mission_vission_box::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondery-color));
+    height: 5px;
+    width: 100%;
+}
+
+.mission_vission_box p{
+    font-weight: 400;
+}
+
+
+.about-accreditation-section .section-title {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.about-accreditation-section .accreditation-desc {
+    color: var(--text-muted);
+}
+.about-accreditation-section .accreditation-list li {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+}
+
+#accre-recog .accre-recog-content {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+#accre-recog .accre-recog-title h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+#accre-recog .accre-recog-content h4 {
+    font-size: 1.4rem;
+}
+#accre-recog .accre-recog-content img {
+    max-width: 180px;
+    margin-bottom: 1rem;
+}
+
+.uk_reg_badge{
+    background: linear-gradient(135deg, var(--primary-color), var(--secondery-color));
+}
+
+/* ISO Accreditation Block Styles */
+.iso-accred-item .accred-recog-item-image img {
+    max-width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(39,81,96,0.08);
+}
+.iso-accred-desc .iso-accred-cert {
+    /* border-left: 4px solid var(--primary-color); */
+    padding: 18px;
+    margin-bottom: 28px;
+    background: #f9fafb;
+    border-radius: 8px;
+    position: relative;
+}
+
+.iso-accred-desc .iso-accred-cert::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: linear-gradient(var(--primary-color), var(--secondery-color));
+    height: 100%;
+    width: 4px;
+}
+
+.iso-accred-desc .iso-accred-cert:last-child {
+    margin-bottom: 0;
+}
+
+.iso_subtitle{
+    color: var(--secondery-color);
+}
+
+.acrr_iso_cert_num{
+    color: var(--secondery-color);
+    font-weight: bold;
+}
+
+.iso-accred-desc .fw-semibold {
+    color: var(--primary-color);
+}
+.iso-accred-desc .iso-accred-main-content {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+.iso-rec-itam-footer {
+    font-size: 0.97rem;
+    color: #555;
+}
+.iso-rec-itam-footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    word-break: break-all;
+}
+@media (max-width: 767.98px) {
+    .iso-accred-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 20px;
+        gap: 20px;
+    }
+    .iso-accred-item .accred-recog-item-image img {
+        max-width: 120px;
+    }
+    .iso-accred-desc .iso-accred-cert {
+        padding-left: 10px;
+    }
+}
+
+.iso_accr_title2{
+    color: var(--secondery-color) !important;
+}
+
+/* ========================== about us page end ========================== */
+
+
+/* ========================== course search bar on courses page start ========================== */
+.course-search-bar-wrapper {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    margin-bottom: 2rem;
+}
+.category-select, .search-input, .sort-select {
+    border-radius: 8px;
+    min-height: 48px;
+    font-size: 1rem;
+}
+.btn-primary-custom {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondery-color) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.btn-primary-custom:hover {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondery-color) 100%);
+}
+.btn-outline-custom {
+    border: 2px solid var(--primary-color);
+    color: var(--secondery-color);
+    border-radius: 8px;
+    font-weight: 600;
+    background: #fff;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-outline-custom:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+/* ========================== course search bar on courses page start ========================== */
+
 
 
 
@@ -7077,7 +7459,7 @@ body{
 
 .contact-info a,
 .contact-info span {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) !important;
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.3s ease;
