@@ -6692,33 +6692,67 @@ body{
 .privacy-card {
     border-radius: 1.5rem;
     box-shadow: 0 4px 24px rgba(39,81,96,0.07);
+    animation: fadeInUp 0.7s;
 }
 .privacy-header h1 {
     font-size: 2.2rem;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+.privacy-details h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
 .privacy-icon {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2px;
 }
-.privacy-item h5 {
-    font-size: 1.1rem;
+.privacy-list {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+    padding-left: 1.2rem;
 }
-.privacy-footer a {
+.privacy-section {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.2rem;
+    /* box-shadow: 0 2px 10px rgba(39,81,96,0.04); */
+}
+.privacy-section:last-child {
+    margin-bottom: 0;
+}
+.privacy-details a {
     text-decoration: underline;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
     .privacy-card {
         padding: 2rem 1rem;
     }
     .privacy-header h1 {
         font-size: 1.4rem;
+    }
+    .privacy-details h4 {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767.98px) {
+    .privacy-card {
+        padding: 1.2rem 0.5rem;
+    }
+    .privacy-header h1 {
+        font-size: 1.1rem;
+    }
+    .privacy-details h4 {
+        font-size: 0.95rem;
     }
 }
 
@@ -6781,6 +6815,67 @@ body{
 }
 
 /* ========================== terms and condition page end ========================== */
+
+
+
+/* ========================== return and refund policy page start ========================== */
+
+.refund-policy-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+.refund-card {
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(39,81,96,0.07);
+    animation: fadeInUp 0.7s;
+}
+.refund-header h1 {
+    font-size: 2.2rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+.refund-list {
+    font-size: 1.07rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: 0;
+}
+.refund-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.refund-list a {
+    text-decoration: underline;
+}
+@media (max-width: 991.98px) {
+    .refund-card {
+        padding: 2rem 1rem;
+    }
+    .refund-header h1 {
+        font-size: 1.4rem;
+    }
+    .refund-list li {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767.98px) {
+    .refund-card {
+        padding: 1.2rem 0.5rem;
+    }
+    .refund-header h1 {
+        font-size: 1.1rem;
+    }
+    .refund-list li {
+        font-size: 0.95rem;
+    }
+}
+
+/* ========================== return and refund policy page end ========================== */
 
 
 
