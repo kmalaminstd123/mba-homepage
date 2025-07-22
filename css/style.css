@@ -6684,6 +6684,49 @@ body{
 /* ========================== course search bar on courses page start ========================== */
 
 
+/* ========================== privacy policy page start ========================== */
+
+.privacy-policy-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+.privacy-card {
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(39,81,96,0.07);
+}
+.privacy-header h1 {
+    font-size: 2.2rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+.privacy-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.privacy-item h5 {
+    font-size: 1.1rem;
+}
+.privacy-footer a {
+    text-decoration: underline;
+}
+@media (max-width: 767.98px) {
+    .privacy-card {
+        padding: 2rem 1rem;
+    }
+    .privacy-header h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ========================== privacy policy page end ========================== */
+
+
+
+
 
 
 /* ============== footer section css start ============== */
