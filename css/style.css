@@ -6826,36 +6826,44 @@ body{
 
 /* ========================== return and refund policy page start ========================== */
 
-.refund-policy-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
 .refund-card {
     border-radius: 1.5rem;
-    box-shadow: 0 4px 24px rgba(39,81,96,0.07);
+    box-shadow: 0 6px 32px rgba(39,81,96,0.12);
     animation: fadeInUp 0.7s;
+    background: #fff;
 }
 .refund-header h1 {
     font-size: 2.2rem;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-.refund-list {
-    font-size: 1.07rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-    padding-left: 0;
+.refund-details h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 .refund-icon {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2px;
+    box-shadow: 0 2px 8px rgba(39,81,96,0.07);
 }
-.refund-list a {
+.refund-section {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 10px rgba(39,81,96,0.04);
+}
+.refund-section:last-child {
+    margin-bottom: 0;
+}
+.refund-details a {
     text-decoration: underline;
 }
 @media (max-width: 991.98px) {
@@ -6865,7 +6873,7 @@ body{
     .refund-header h1 {
         font-size: 1.4rem;
     }
-    .refund-list li {
+    .refund-details h4 {
         font-size: 1rem;
     }
 }
@@ -6876,12 +6884,84 @@ body{
     .refund-header h1 {
         font-size: 1.1rem;
     }
-    .refund-list li {
+    .refund-details h4 {
         font-size: 0.95rem;
     }
 }
 
 /* ========================== return and refund policy page end ========================== */
+
+
+
+
+
+
+
+/* ========================== doctorate page css start here ========================== */
+
+.dba_hero .hero-title{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .dba_hero .hero-features{
+        align-items: center;
+    }
+}
+
+.all_dba_section .program-content h3{
+    font-size: 20px;
+}
+
+.doctorate_about_us{
+    margin-top: 0;
+    padding: 60px 0;
+}
+
+/* required docmuents section of doctorate page start */
+.doctorate_required_document{
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.doctorate_required_document .documents-grid{
+    gap: 10px;
+}
+/* required docmuents section of doctorate page end */
+
+/* advisore role section start */
+
+.advisor_role{
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.advisor_content p{
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.doctorate_page_section_title{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .doctorate_page_section_title{
+        font-size: 20px !important;
+    }
+}
+
+/* advisore role section end */
+
+.doctorate_page_main_title{
+    font-size: 38px;
+}
+
+/* ========================== doctorate page css end here ========================== */
+
+
 
 
 
