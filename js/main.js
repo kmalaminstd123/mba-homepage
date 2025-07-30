@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Social login animation
-    document.querySelector('.social-login').addEventListener('click', function (e) {
+    document.querySelector('.social-login') && document.querySelector('.social-login').addEventListener('click', function (e) {
         e.preventDefault();
         this.classList.add('fade-out');
 
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Register button animation
-    document.querySelector('.register-btn').addEventListener('click', function (e) {
+    document.querySelector('.register-btn') && document.querySelector('.register-btn').addEventListener('click', function (e) {
         e.preventDefault();
         this.classList.add('fade-out-right');
 
@@ -169,17 +169,16 @@ window.addEventListener('scroll', function () {
     const topBar = document.querySelector('.top-bar');
     const mainNav = document.querySelector('.main-nav');
 
-    topBar.style.transition = 'all 0.4s linear';
+    if (topBar && mainNav) {
+        topBar.style.transition = 'all 0.4s linear';
 
-    if (scrolled > 100) {
-        topBar.style.transition = 'all 0.4s linear';
-        topBar.style.transform = 'translateY(-100%)';
-        
-        mainNav.style.top = '0';
-    } else {
-        topBar.style.transition = 'all 0.4s linear';
-        topBar.style.transform = 'translateY(0)';
-        mainNav.style.top = '54px';
+        if (scrolled > 100) {
+            topBar.style.transform = 'translateY(-100%)';
+            mainNav.style.top = '0';
+        } else {
+            topBar.style.transform = 'translateY(0)';
+            mainNav.style.top = '54px';
+        }
     }
 });
 
@@ -314,4 +313,22 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         direction: 'horizontal'
     });
+
+    
+
+    // mba page swiper slider
+    new Swiper('.mba-s-s', {
+        loop: true,
+        autoplay: {
+            delay: 4000
+        },
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 50,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
 });
