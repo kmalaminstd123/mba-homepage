@@ -23,37 +23,36 @@ function toggleMobileMenu() {
             navItems.classList.remove('fade-in-down');
         }, 600);
     }
+
+    
 }
+
 
 
 
 // Search functionality
 document.addEventListener('DOMContentLoaded', function () {
-    // const searchInput = document.querySelector('.search-input');
-    // const searchBtn = document.querySelector('.search-btn');
 
-    // searchBtn.addEventListener('click', function () {
-    //     if (searchInput.value.trim()) {
-    //         // Add fade out animation to search button
-    //         searchBtn.classList.add('fade-out');
 
-    //         setTimeout(() => {
-    //             alert('Searching for: ' + searchInput.value);
-    //             searchBtn.classList.remove('fade-out');
-    //             searchBtn.classList.add('fade-in');
+    // mba slider nested swiper slider
+    const mbaNestedFirstSlider = new Swiper('.mba_nest_slider_v1', {
+        loop: true,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 4000
+        },
+        clickable: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: "fraction",
+        },
+    })
 
-    //             setTimeout(() => {
-    //                 searchBtn.classList.remove('fade-in');
-    //             }, 500);
-    //         }, 250);
-    //     }
-    // });
-
-    // searchInput.addEventListener('keypress', function (e) {
-    //     if (e.key === 'Enter') {
-    //         searchBtn.click();
-    //     }
-    // });
 
     // Navigation link active states with animations
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -331,4 +330,4 @@ document.addEventListener('DOMContentLoaded', function() {
             prevEl: '.swiper-button-prev',
         },
     })
-});
+});  
