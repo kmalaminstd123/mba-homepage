@@ -54,6 +54,48 @@ body {
     color: #fff;
 }
 
+/* preloader css start */
+
+.preloader{
+    background: #fff;
+    position: fixed;
+    height: 100dvh;
+    width: 100%;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader .preloader-img{
+    height: 70px;
+    width: 70px;
+    animation: preloaderAnim 1s ease-in-out infinite;
+}
+
+.preloader .preloader-img img{
+    object-fit: contain;
+    height: 100%;
+    height: 100%;
+}
+
+@keyframes preloaderAnim{
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* preloader css end */
+
 /* rgba of primary rgb(39,81,96) */
 /* rgba of secondary rgb(133,35,65) */
 
@@ -8099,6 +8141,189 @@ time {
 }
 
 /* ========================== eiu affiliation page end ========================== */
+
+
+/* ========================== application page start ========================== */
+
+.application-page-banner{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.application-page-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.6);
+    /* dark overlay */
+    z-index: -1;
+}
+
+.application-page-banner .breadcrumb-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.application-page-banner .breadcrumb-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+
+/*  scholarship form css start  */
+
+/* Scholarship Form Styles */
+#scholarship-form {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+#scholarship-form .form-wrapper {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#scholarship-form .scholarship-form {
+    background: #fff;
+}
+
+#scholarship-form .section-title {
+    color: #265367;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#scholarship-form .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondery-color);
+    border-radius: 2px;
+}
+
+#scholarship-form .form-section-title {
+    color: #265367;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Floating Label Styles */
+#scholarship-form .floating-label {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#scholarship-form .floating-label label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.75rem 1rem;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    color: #6c757d;
+}
+
+#scholarship-form .floating-label .form-control:focus~label,
+#scholarship-form .floating-label .form-control:not(:placeholder-shown)~label,
+#scholarship-form .floating-label .form-select:focus~label,
+#scholarship-form .floating-label .form-select:not([value=""])~label {
+    transform: translateY(-50%) scale(0.85);
+    background: #fff;
+    padding: 0 0.5rem;
+    top: 0;
+    left: 1rem;
+    color: #265367;
+}
+
+#scholarship-form .form-control,
+#scholarship-form .form-select {
+    padding: 0.75rem 1rem;
+    border: 2px solid #265367;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#scholarship-form .form-control:focus,
+#scholarship-form .form-select:focus {
+    border-color: var(--secondery-color);
+    box-shadow: 0 0 0 0.2rem rgba(133, 35, 65, 0.3);
+}
+
+/* Checkbox Styles */
+#scholarship-form .education-checkboxes {
+    padding: 1rem;
+    border: 2px solid #265367;
+    border-radius: 8px;
+}
+
+#scholarship-form .checkbox-group {
+    margin-top: 0.5rem;
+}
+
+#scholarship-form .form-check {
+    margin-bottom: 0.5rem;
+}
+
+#scholarship-form .form-check-input:checked {
+    background-color: #2a5266;
+    border-color: #8f653b;
+}
+
+/* Submit Button */
+#scholarship-form .btn-primary {
+    background-color: #8f653b;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-size: 18px;
+}
+
+#scholarship-form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(38, 83, 103, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #scholarship-form .section-title {
+        font-size: 2rem;
+    }
+
+    #scholarship-form .scholarship-form {
+        padding: 2rem !important;
+    }
+}
+
+/*  scholarship form css end  */
+
+/* ========================== application page end ========================== */
 
 
 

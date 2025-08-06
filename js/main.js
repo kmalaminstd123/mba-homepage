@@ -1,3 +1,8 @@
+// preloader
+window.addEventListener('load', ()=> {
+    document.querySelector('.preloader').style.display = 'none'
+})
+
 // Mobile menu toggle
 function toggleMobileMenu() {
     const navItems = document.getElementById('navItems');
@@ -186,7 +191,7 @@ const select = document.getElementById('programDropdownSelect');
 
 select && select.addEventListener('change', function () {
     const targetTab = document.querySelector(`button[data-bs-target="${this.value}"]`);
-    if (targetTab) {
+    if (targetTab) { 
         new bootstrap.Tab(targetTab).show();
     }
 });
