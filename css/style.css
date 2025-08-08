@@ -1723,6 +1723,79 @@ body {
 /* popular course section end */
 
 
+/* =========== alumni section start =========== */
+
+#alumni{
+    margin: 60px 0;
+}
+
+.all_alumni{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.alumni_box{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.alumni-image{
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+.alumni-image img{
+    border-radius: 50%;
+}
+
+.alumni-image::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondery-color));
+    height: 110%;
+    width: 110%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.alumni_box .flag{
+    height: 20px;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+}
+
+.alumni_box .flag img{
+    height: 100%;
+    width: auto;
+}
+
+.alumni_box .alumni_personal_details{
+    text-align: center;
+}
+
+.alumni_box .alumni_personal_details h4{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.alumni_box .alumni_personal_details p{
+    font-size: 12px;
+}
+
+/* =========== alumni section end =========== */
+
+
 /* mba program css start */
 
 
@@ -8182,6 +8255,12 @@ time {
     color: #e0e0e0;
 }
 
+@media only screen and (max-width: 768px){
+    .application-page-banner .breadcrumb-title{
+        font-size: 30px;
+    }
+}
+
 
 /*  scholarship form css start  */
 
@@ -8310,6 +8389,10 @@ time {
     box-shadow: 0 5px 15px rgba(38, 83, 103, 0.3);
 }
 
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     #scholarship-form .section-title {
@@ -8317,13 +8400,208 @@ time {
     }
 
     #scholarship-form .scholarship-form {
-        padding: 2rem !important;
+        padding: 2rem 1rem !important;
+    }
+
+    #scholarship-form .section-title{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #scholarship-form .section-title{
+        font-size: 1.3rem !important;
+    }
+
+    .scholarship-form-subtitle{
+        font-size: 15px;
     }
 }
 
 /*  scholarship form css end  */
 
 /* ========================== application page end ========================== */
+
+
+
+
+/* ========================== verify page css start ========================== */
+
+.verify_sec{
+    margin: 80px 0;
+}
+
+.verify_sec .scholarship-form .form-group{
+    display: flex;
+    border: 2px solid var(--primary-color);
+}
+
+.verify_sec .scholarship-form input{
+    border: 0 !important;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+.verify_sec .scholarship-form input:focus{
+    box-shadow: none !important;
+}
+
+.verify_sec .scholarship-form button{
+    border-radius: 0;
+}
+
+.verify_sec .scholarship-form button{
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+}
+
+/* ========================== verify page css end ========================== */
+
+
+
+
+
+/* ========================== contact page css start ========================== */
+
+.right_conatct_social_icon{
+    background: linear-gradient(to top right, var(--primary-color) -5%, var(--secondery-color) 100%);
+}
+.contact_us{
+    background-color: #f1f1f1;
+    padding: 120px 0px;
+}
+
+.contact_inner{
+    background-color: #fff;
+    position: relative;
+    box-shadow: 20px 22px 44px #cccc;
+    border-radius: 25px;
+}
+.contact_field{
+    padding: 60px 230px 90px 100px;
+}
+.right_conatct_social_icon{
+    height: 100%;
+}
+
+.contact_field h3{
+   color: #000;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.contact_field p{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+.contact_field .form-control{
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact_field .form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid var(--secondery-color);
+}
+.contact_field .form-control::placeholder{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.contact_info_sec {
+    position: absolute;
+    background-color: #2d2d2d;
+    right: 1px;
+    top: 18%;
+    height: 340px;
+    width: 340px;
+    padding: 40px 20px 40px;
+    border-radius: 25px 0 0 25px;
+}
+
+
+
+.contact_info_sec h4{
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.info_single{
+    margin: 30px 0px;
+}
+.info_single i{
+    margin-right: 15px;
+}
+.info_single span{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+button.contact_form_submit {
+    background: linear-gradient(to top right, var(--primary-color) -5%, var(--secondery-color) 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.socil_item_inner li{
+    list-style: none;
+}
+.socil_item_inner li a{
+    color: #fff;
+    font-size: 14px;
+}
+.socil_item_inner{
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 992px){
+    .contact_info_sec{
+        position: static;
+        width: 100%;
+    }
+
+    .contact_field{
+        padding: 40px 20px;
+    }
+
+    .socil_item_inner{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .socil_item_inner{
+        flex-direction: row;
+        justify-content: center !important;
+        gap: 15px;
+    }
+
+    .contact_info_sec{
+        border-top-left-radius: 0;
+    }
+
+    .contact_field h3{
+        font-size: 28px;
+    }
+}
+
+/* ========================== contact page css end ========================== */
 
 
 
